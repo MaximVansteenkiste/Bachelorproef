@@ -3,10 +3,10 @@
 \section{Introduction} % The \section*{} command stops section numbering
 \label{sec:introductie}
 
-A module bundler is one of the most essential technologies in modern web development. Nobody makes webapps with plain HTML, CSS and JS anymore. All the fancy new tools for a webdeveloper to use, like Angular or React, won't work in the browser without being bundled. So the choice of which bundler to use is very important.
-While Webpack is the most popular there are many others that claim to do the job better. Why is it still the king then? How does Webpack compare to its competitors? Are their claims valid? If so, why is Webpack still the most popular? 
+A module bundler is one of the most essential technologies in modern web development. Nobody makes web applications with plain HTML, CSS and JS anymore. All the fancy new tools, frameworks and libraries for a web developer to use, like Angular or React, won't work in the browser without being bundled. So the choice of which bundler to use is very important.
+While Webpack is the most popular, there are many others that claim to do the job better. How does Webpack compare to its competitors? Are their claims valid? If so, why is Webpack still the most popular? 
 
-Many developers give much thought about which framework to use, which back-end and so forth. The module bundler however often doesn't get that much tought. This is because it's less attractive and in many frameworks comes pre-installed. But as your webapp can't run without it, it's one of the most important choices you make. In this paper, I want to demystify the module bundler and compare the most popular options. Not just in terms of speed and module size, but also its plugins, developer experience, ... .
+Many developers give much thought about which framework to use, which back-end and so forth. The module bundler however often doesn't get that much thought. This is because it's less attractive and in many frameworks comes pre-installed. But as your web app can't run without it, it's one of the most important choices you make. In this paper, I want to demystify the module bundler and compare the most popular options. Not just in terms of speed and module size, but also its plugins, developer experience, ... .
 
 
 %---------- Stand van zaken ---------------------------------------------------
@@ -22,15 +22,15 @@ Much can already be found about module bundlers online. On the website or GitHub
 \label{sec:methodologie}
 
 First I will compare the most popular bundlers theoretically. How they work and how they may differ. 
-To compare them in practice will require code-bases of many sizes. Luckily there are many open-source code bases on GitHub to chose from. Why many sizes, you ask? Because it could be interesting to see how module bundlers deal with smaller projects and larger ones. To see if the advantages of one diminishes when the project size in- or decreases. It could also be interesting to compare them based on the framework, like Angular or a Create-React-App app. Those frameworks ship with pre-configured bundlers so it remains to be seen if it's even possible to replace those with others. It's something I want to test anyhow. 
+To compare them in practice will require code-bases of many sizes. Luckily there are many open-source codebases on GitHub to chose from. Why many sizes, you ask? Because it could be interesting to see how module bundlers deal with smaller projects compared to larger ones. To see if the advantages of one fade when the project size in- or decreases. It could also be interesting to compare them based on the framework, like Angular or Create-React-App. Those frameworks ship with pre-configured bundlers so it remains to be seen if it's even possible to replace those with others. It's something I want to test anyhow. 
 
-I will test each codebase with many bundlers and then observe the differences in numerous categories. One important of which is the developer experience: how easy is it to install? How simple or complex is the config file and the plugins. There are a lot of things to consider. 
+I will test each codebase with many bundlers and then observe the differences in numerous categories. One important of which is the developer experience: how easy is it to install? How simple or complex are the config file and plugins. There are a lot of things to consider. 
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Anticipated results}
 \label{sec:verwachte_resultaten}
 
-Many module bundlers claim speedier builds and smaller bundle sizes. So that's an easy prediction to make. Wether that remains true with projects of any size remains to be seen. Will those improvements be great enough to warrant the competitor to be used over Webpack. Developer experience and performance in development mode are defining factors as well. Obviously the former will be quite subjective so that's an important factor to note.
+Many module bundlers claim speedier builds and smaller bundle sizes. So that's an easy prediction to make. Wether that remains true with projects of any size remains to be seen. Will those improvements be great enough to warrant the competitor to be used over Webpack? Developer experience and performance in development mode are defining factors as well. Obviously the former will be quite subjective so that's an important factor to note.
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Anticipated conclusions}
