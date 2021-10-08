@@ -23,7 +23,7 @@ Je beschrijft zeker:
 \section{State-of-the-art}
 \label{sec:state-of-the-art}
 
-Much has already been written about module bundlers online. However many don't go in depth with the workings of it or stay very superficial. While they provide very useful information, I
+Much has already been written about module bundlers online. While they provide very useful information, I have yet to find an in-depth analysis of the differences between the major players and what that means for the developer and the output product.
 
 Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein. Dit kan bijvoorbeeld een literatuurstudie zijn. Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek? Wat is de relevantie met jouw onderzoek?
 
@@ -42,17 +42,21 @@ Je mag gerust gebruik maken van subsecties in dit onderdeel.
 \section{Methodologie}
 \label{sec:methodologie}
 
+First I will compare the most popular bundlers theorethicly. How they work and how they may differ.
+To compare them in practice will require code-bases of many sizes. Why many sizes, you ask? Because it could be interesting to see how module bundlers deal with smaller projects and larger ones. To see if the advantages of one deminish when the project size in- or decreases. 
+
+I will test each codebase with many bundlers and then observe the differences in numerous categories. One important of which is the developer experience: how easy is it to install? How simple or compley is the config file and the plugins. There are a lot of things to consider  
 Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
+Many module bundlers claim speedier builds and smaller bundle sizes. If that's the case for a project of any size remains to be seen. But I do expect to see a difference there. The question will be if those improvements warrant the competitor to be used over Webpack. Developer experience and performance in development mode are defining factors in my opinion as well. Obviously the former will be quite subjective so that's an important factor to note.
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
 \label{sec:verwachte_conclusies}
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+I honestly have no idea what I will conclude. That's the most important reason why I want to conduct this research. Webpack has served us well but as the tech world shifts more and more towards applications written with web technologies, the time of newer approaches may have come.
 
