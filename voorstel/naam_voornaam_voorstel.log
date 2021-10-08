@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  8 OCT 2021 10:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  8 OCT 2021 11:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1060,35 +1060,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
  (./naam_voornaam_voorstel.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
+Package rerunfilecheck Info: File `naam_voornaam_voorstel.out' has not changed.
 
-
-Package rerunfilecheck Warning: File `naam_voornaam_voorstel.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `naam_voornaam_voorstel.out':
-(rerunfilecheck)             Before: 52E441039170BE26B9A9A49670501B94;255
-(rerunfilecheck)             After:  6D58AAF4E78F88675DCF1A24F155BFCA;257.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 94D0FDB8AB8F9C7EC14CD74C51BB7C92;256.
 Package logreq Info: Writing requests to 'naam_voornaam_voorstel.run.xml'.
 \openout1 = `naam_voornaam_voorstel.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20419 strings out of 480608
- 352471 string characters out of 5903629
- 1276248 words of memory out of 5000000
+ 20424 strings out of 480608
+ 352510 string characters out of 5903629
+ 1276303 words of memory out of 5000000
  35864 multiletter control sequences out of 15000+600000
- 584542 words of font info for 186 fonts, out of 8000000 for 9000
+ 584723 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,14n,55p,849b,4662s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
 2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on naam_voornaam_voorstel.pdf (2 pages, 132064 bytes).
+Output written on naam_voornaam_voorstel.pdf (2 pages, 132038 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

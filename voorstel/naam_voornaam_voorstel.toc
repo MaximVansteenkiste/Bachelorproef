@@ -5,9 +5,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}State-of-the-art}{1}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Methodologie}{1}{section.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Anticipated results}{1}{section.4}%
+\contentsline {section}{\numberline {3}Methodology}{1}{section.3}%
 \contentsfinish 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Anticipated results}{2}{section.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Anticipated conclusions}{2}{section.5}%
