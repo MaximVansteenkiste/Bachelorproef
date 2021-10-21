@@ -11,3 +11,5 @@
 \contentsline {section}{\numberline {4}Anticipated results}{2}{section.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Anticipated conclusions}{2}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}References}{2}{section.6}%

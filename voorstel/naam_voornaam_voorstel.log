@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  8 OCT 2021 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  21 OCT 2021 14:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1031,17 +1031,46 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 \tf@toc=\write5
 \openout5 = `naam_voornaam_voorstel.toc'.
 
- (./voorstel-inhoud.tex [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/u
-pdmap/pdftex.map}
+ (./voorstel-inhoud.tex
+Overfull \hbox (1.1394pt too wide) in paragraph at lines 27--28
+\OT1/ptm/m/n/10 (-20) ready exis-ting pro-jects? I work at a com-pany cal-led F
+TRPRF
+ []
+
+[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-])
+]
+Overfull \hbox (2.12157pt too wide) in paragraph at lines 48--49
+[]\OT1/ptm/m/n/10 (-20) Search re-sults mo-dule bund-lers. (n.d.). Google Trend
+s.
+ []
+
+
+Overfull \hbox (8.69983pt too wide) in paragraph at lines 48--49
+\OT1/ptm/m/n/10 (-20) Re-trie-ved Oc-to-ber 2021, from [][]https://trends.googl
+e.com[][] 
+ []
+
+
+Overfull \hbox (22.48122pt too wide) in paragraph at lines 49--50
+\OT1/ptm/m/n/10 (-20) https://betterprogramming.pub/javascript-module-bundlers-
+
+ []
+
+
+Overfull \hbox (77.51534pt too wide) in paragraph at lines 50--51
+\OT1/ptm/m/n/10 (-20) Sta-te-OfJs. Re-trie-ved Oc-to-ber 2021, from https://201
+8.stateofjs.com/other-
+ []
+
+)
 
 LaTeX Warning: Empty bibliography on input line 93.
 
 
 AED: lastpage setting LastPage
-<HOGENT_Logo_Pos_rgb.png, id=45, 3503.0875pt x 1975.38pt>
+<HOGENT_Logo_Pos_rgb.png, id=52, 3503.0875pt x 1975.38pt>
 File: HOGENT_Logo_Pos_rgb.png Graphic file (type png)
 <use HOGENT_Logo_Pos_rgb.png>
 Package pdftex.def Info: HOGENT_Logo_Pos_rgb.png  used on input line 95.
@@ -1062,27 +1091,27 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `naam_voornaam_voorstel.out' has not changed.
 
-(rerunfilecheck)             Checksum: 94D0FDB8AB8F9C7EC14CD74C51BB7C92;256.
+(rerunfilecheck)             Checksum: C8F97FE8BD8EAABDAF9665E3A88B705F;301.
 Package logreq Info: Writing requests to 'naam_voornaam_voorstel.run.xml'.
 \openout1 = `naam_voornaam_voorstel.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20424 strings out of 480608
- 352510 string characters out of 5903629
- 1276303 words of memory out of 5000000
- 35864 multiletter control sequences out of 15000+600000
- 584723 words of font info for 189 fonts, out of 8000000 for 9000
+ 20453 strings out of 480608
+ 352799 string characters out of 5903629
+ 1276348 words of memory out of 5000000
+ 35870 multiletter control sequences out of 15000+600000
+ 587010 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,14n,55p,849b,4662s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
 2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on naam_voornaam_voorstel.pdf (2 pages, 132038 bytes).
+Output written on naam_voornaam_voorstel.pdf (2 pages, 135262 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 47150 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 47670 words of extra memory for PDF output out of 51595 (max. 10000000)
 
