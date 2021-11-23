@@ -1,0 +1,38 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {dutch}{}
+\babel@toc {english}{}
+\babel@toc {dutch}{}
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{15}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Problem Statement}{15}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Research question}{16}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Research objective}{16}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Structure of this bachelor thesis}{16}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}State of the art}{17}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Methodology}{21}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Conclusie}{23}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{25}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Introduction}{25}{section.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}State-of-the-art}{26}{section.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Methodology}{26}{section.A.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Anticipated results}{26}{section.A.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Anticipated conclusions}{26}{section.A.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.6}References}{27}{section.A.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{29}{appendix*.7}%
+\contentsfinish 

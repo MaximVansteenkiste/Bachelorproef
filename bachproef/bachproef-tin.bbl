@@ -1,0 +1,117 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{Creeger2009}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e888aba3556efbb8063540e3e2ae69b4}{%
+           family={Creeger},
+           familyi={C\bibinitperiod},
+           given={Mache},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e888aba3556efbb8063540e3e2ae69b4}
+      \strng{fullhash}{e888aba3556efbb8063540e3e2ae69b4}
+      \strng{bibnamehash}{e888aba3556efbb8063540e3e2ae69b4}
+      \strng{authorbibnamehash}{e888aba3556efbb8063540e3e2ae69b4}
+      \strng{authornamehash}{e888aba3556efbb8063540e3e2ae69b4}
+      \strng{authorfullhash}{e888aba3556efbb8063540e3e2ae69b4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{8}
+      \field{title}{{CTO Roundtable: Cloud Computing}}
+      \field{volume}{52}
+      \field{year}{2009}
+      \field{pages}{50\bibrangedash 56}
+      \range{pages}{7}
+    \endentry
+    \entry{Knuth1998}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ec08e6f01da5f3814f28a70c89c64656}{%
+           family={Knuth},
+           familyi={K\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Redwood City, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Addison Wesley Longman Publishing Co., Inc.}%
+      }
+      \strng{namehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{fullhash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{bibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorbibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authornamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorfullhash}{ec08e6f01da5f3814f28a70c89c64656}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The art of computer programming, volume 3: (2nd ed.) sorting and searching}
+      \field{year}{1998}
+    \endentry
+    \entry{Pollefliet2011}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7ca343ebcc6de1727ac22a1a847c21e5}{%
+           family={Pollefliet},
+           familyi={P\bibinitperiod},
+           given={Leen},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Gent}%
+      }
+      \list{publisher}{1}{%
+        {Academia Press}%
+      }
+      \strng{namehash}{7ca343ebcc6de1727ac22a1a847c21e5}
+      \strng{fullhash}{7ca343ebcc6de1727ac22a1a847c21e5}
+      \strng{bibnamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
+      \strng{authorbibnamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
+      \strng{authornamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
+      \strng{authorfullhash}{7ca343ebcc6de1727ac22a1a847c21e5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Schrijven van verslag tot eindwerk: do's en don'ts}
+      \field{year}{2011}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
