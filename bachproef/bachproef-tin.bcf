@@ -2813,10 +2813,6 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Pollefliet2011</bcf:citekey>
-    <bcf:citekey order="2">Pollefliet2011</bcf:citekey>
-    <bcf:citekey order="3">Knuth1998</bcf:citekey>
-    <bcf:citekey order="4">Knuth1998</bcf:citekey>
-    <bcf:citekey order="5">Creeger2009</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

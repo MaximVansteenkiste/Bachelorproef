@@ -16,6 +16,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}State of the art}{17}{chapter.2}%
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Before bundlers}{18}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Script tags}{18}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Immediately invoked function expressions}{18}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}CommonJS}{18}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}ECMAScript Modules}{19}{section.2.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodology}{21}{chapter.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Conclusie}{23}{chapter.4}%
