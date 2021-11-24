@@ -1356,12 +1356,15 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagk8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagk8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/avantgar/pagd8t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/avantgar/pagd8t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/avantgar/pagd8t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/avantgar/pagk8t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagk8r.tfm
 OUTPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.toc
 INPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.lof
 INPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.lof
@@ -1399,6 +1402,10 @@ INPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/standvanzaken.tex
 INPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/standvanzaken.tex
 INPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/standvanzaken.tex
 INPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/standvanzaken.tex
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/avantgar/pagd8t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm
 INPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/methodologie.tex
 INPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/methodologie.tex
 INPUT /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/methodologie.tex
