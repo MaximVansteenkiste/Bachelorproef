@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Module from "./Module";
+const Module = require("Module.jsx");
 
 function App() {
   const [count, setCount] = useState(0);

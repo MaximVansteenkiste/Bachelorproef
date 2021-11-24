@@ -1,4 +1,4 @@
-\chapter{\IfLanguageName{dutch}{Stand van zaken}{State of the art}}
+\chapter{State of the art}
 \label{ch:stand-van-zaken}
 
 % Tip: Begin elk hoofdstuk met een paragraaf inleiding die beschrijft hoe
@@ -24,9 +24,13 @@ Node.js, a Javascript runtime for computers and servers, has supported modular p
 
 Javascript can be linked to, or written directly in, the HTML file of a site using script-tags. Knowing this, we could use a different tag and corresponding Javascript file for each use case. Let’s say we have a file with all the code for authenticating a user and another one for general events (button clicks, ...). This is fine when we only have two files that aren’t that big, but introduces network bottlenecks when scaled to a larger application. The same is true if we were to put all our code in one large JS file and link it to the HTML. The global scope would also get polluted with our custom functions. As some, or all, the functions are available on the global scope, this could introduce security risks and name collisions. 
 
+\lstinputlisting[language=HTML]{codeSnippets/scriptTags.html}
+
 \subsection{Immediately invoked function expressions}
 
-An Immediately invoked function expression or IIFE is a function that runs as soon as it’s defined. Because each IIFE declares a local scope, it solves the problem of polluting the global one. The use of IFFEs led to so-called task runners: they concatenate all your project files together. The big drawback of task runners is that when one file is changed, the whole project has to be rebuilt. You are also required to manually define all the dependencies up front. They make it easier to reuse functions and whole scripts but do nothing for the build output. You can still end up with a very large Javascript file that the user has to download. 
+An Immediately invoked function expression or IIFE is a function that runs as soon as it’s defined. Because each IIFE declares a local scope, it solves the problem of polluting the global one. The use of IFFEs led to so-called task runners: they concatenate all your project files together. The big drawback of task runners is that when one file is changed, the whole project has to be rebuilt. You are also required to manually define all the dependencies up front. They make it easier to reuse functions and whole scripts but do nothing for the build output. You can still end up with a very large Javascript file that the user has to download. \\ \\ \\
+
+\lstinputlisting[language=Javascript]{codeSnippets/IIFE.js}
 
 \subsection{CommonJS}
 
@@ -36,17 +40,27 @@ CommonJS introduced the require function in Javascript. With it, everything that
 
 All this came with a big catch: It worked, and still works, great for Node.js applications but it isn’t an official feature of Javascript and therefore browsers don’t support it. As commonJS doesn’t actually bundle the code, web browsers can’t make sense of the different modules that are imported. Something has to do it for them. 
 
+\lstinputlisting[language=Javascript]{codeSnippets/commonJSExport.js}
+
+\lstinputlisting[language=Javascript]{codeSnippets/commonJSImport.js}
+
 \subsection{ECMAScript Modules}
 
-CommonJS wasn’t an official feature of Javascript. ECMAscript or Javascript did introduce its own module system in version 6. ECMAScript Modules or ESM, accomplish the same goals as CommonJS, but with a different syntax. Now modern browsers can make sense of modular applications that only use ESMs. 
+CommonJS wasn’t an official feature of Javascript. ECMAscript (=Javascript) did introduce its own module system in version 6. ECMAScript Modules or ESM, accomplish the same goals as CommonJS, but with a different syntax. Now modern browsers can make sense of modular applications that only use ESMs. 
+
+\lstinputlisting[language=Javascript]{codeSnippets/esmExport.js}
+
+\lstinputlisting[language=Javascript]{codeSnippets/esmImport.js}
 
 \section{Module bundlers}
 
 Developers are always seeking ways to make their lives easier. They wanted to import whatever type of module or any asset for that matter into their project and ship it in a smaller output file than the source to the end-user. This is why the module bundler was born. 
 
 All module bundlers around today share common concepts. We’ll look at the 2 most important ones. 
+
 \subsubsection{Tree shaking}
 Tree shaking is the process of removing dead code. When a module is imported, perhaps only a part of that module is needed. Maybe only one function of that module is used in the project. With tree shaking, the rest of that module that isn’t used, is removed. 
+
 \subsubsection{Code splitting}
 Code splitting can be used to divide up the output bundle that is created into smaller files. The partial bundles are then loaded in parallel or when needed. For example: take a website with multiple pages. If the code isn’t split, all the code of all the pages will be contained in a single file and downloaded by the user when the site is requested. In many cases, like a small project, this is fine. That’s why it’s optional. For larger applications however, it could introduce network bottlenecks. If that’s the case, the code can be split into a single or multiple files per page. Then the smaller files are only loaded when the corresponding page is requested. 
 
@@ -63,7 +77,10 @@ Because Webpack only understands Javascript and JSON files out of the box, Loade
 Using Loaders, other types of modules or even assets like images can be imported and processed by WebPack. On top of that, Webpack can also be extended with plugins. They allow for a wide range of extra functionality like bundle optimization. 
 
 The function of a module bundler has already been discussed. But how does Webpack achieve this? Whenever one file depends on another in a project, Webpack sees this dependency and puts it into something called a dependency graph. 
+
 This graph is built recursively. When it is time to build the application, it uses the graph to piece all the files together into one output file that is then shipped to the browser. Webpack does this both in development as in production. 
+
+\includegraphics{Webpack}
 
 \subsubsection{Rollup and Parcel}
 ...
@@ -72,6 +89,8 @@ This graph is built recursively. When it is time to build the application, it us
 The examples we looked at so far are all module bundlers that use the concepts of bundled development. One very important thing to note is the word development. The differences between both approaches lies only in the development phase. The advantages of unbundled development are only noticeable when the developer or the development team is actually developing the application. When it is time to make a production build that the end-user will be able to use, the following unbundled development build tools still use the same module bundlers discussed in the previous section. So in essence, we can’t call the unbundled development build tools module bundlers, because they don’t bundle anything. They do use module bundlers.
 
 Because most browsers now support ESM, bundling all Javascript modules of a project into one output file isn’t necessary. All non-Javascript modules do have to be translated or built to a valid Javascript module using a built tool (in WebPack this is called a Loader). In bundled development, when the development server is started, the whole project first has to be built and bundled; When a file is changed that file is rebuilt and then the whole project is again rebundled. In unbundled development a file is only built when it’s requested, meaning very fast startup time of the server. When a file is built, it is cached indefinitely. The browser will never have to download a file twice until it changes. When a file does change, only that single file has to be rebuilt. 
+
+\includegraphics[scale=0.6]{Bundledvsunbundled}
 
 All this results in very fast development performance compared to bundled development tools like WebPack. However, as mentioned before, unbundled development tools still use traditional module bundlers to make a production build. It does this because the advantages of Tree-shaking, a single output file and other features of module bundlers still hold up in the production phase: Tree-shaking results in a smaller output file; importing non-Javascript or CommonJS modules into ESMs is not supported in browsers; Not all modules are written with ESM; and the list goes on. We’ll now look at two examples of unbundled development tools.
 
