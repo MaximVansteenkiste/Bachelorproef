@@ -1,0 +1,1 @@
+const array=["Hello","my","name","is","Maxim"];for(const element of array){console.log(element);}
