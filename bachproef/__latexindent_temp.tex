@@ -1,115 +1,50 @@
-\chapter{State of the art}
-\label{ch:stand-van-zaken}
+%%=============================================================================
+%% Inleiding
+%%=============================================================================
 
-% Tip: Begin elk hoofdstuk met een paragraaf inleiding die beschrijft hoe
-% dit hoofdstuk past binnen het geheel van de bachelorproef. Geef in het
-% bijzonder aan wat de link is met het vorige en volgende hoofdstuk.
+\chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}
+\label{ch:inleiding}
 
-% Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
+De inleiding moet de lezer net genoeg informatie verschaffen om het onderwerp te begrijpen en in te zien waarom de onderzoeksvraag de moeite waard is om te onderzoeken. In de inleiding ga je literatuurverwijzingen beperken, zodat de tekst vlot leesbaar blijft. Je kan de inleiding verder onderverdelen in secties als dit de tekst verduidelijkt. Zaken die aan bod kunnen komen in de inleiding~\autocite{MaximJow}:
 
-A modern website is created with three main technologies: HTML for content, CSS for styling, and Javascript to make the page interactive. Those three can all be linked, put on a server somewhere and the end-user can load a working website. Even though the large web platforms of today, like Facebook and Youtube, are all based on these technologies, a lot more ingredients are needed to make them work.
+\begin{itemize}
+  \item context, achtergrond
+  \item afbakenen van het onderwerp
+  \item verantwoording van het onderwerp, methodologie
+  \item probleemstelling
+  \item onderzoeksdoelstelling
+  \item onderzoeksvraag
+  \item \ldots
+\end{itemize}
 
-If we were to create a static, basic site, the three main technologies of the web are all you need. But it’s a whole different story for a developer that wants to create a more complex site, a reactive site, a site that uses open-source packages or just wants to make his own job a little bit easier. There are thousands of libraries, packages and frameworks that enable web development on a whole new level and easier than ever before. However this does pose a new problem. 
+\section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}
+\label{sec:probleemstelling}
 
-If we were to create a web application with a single Javascript file and no dependencies i.e no other files that are linked to that Javascript file, link it to our index.html and throw in some CSS, our site would work fine. But what if we introduce a second Javascript file and reference it in our other file. What if we want to install and use an open-source package downloaded from a package-manager like NPM? What if we want to use SASS to extend CSS? This all wouldn’t work out of the box. The browser just isn’t able to figure out how to stitch all the different pieces together.
-We need something that will bundle all the different Javascript files and dependencies, something that understands and correctly loads the SASS files or any other file for that matter. We need a module bundler. In essence, they take all the different source files in a project and put them into a single output file that the browser understands. 
+Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's,'' systeembeheerders, enz.~zijn nog te vaag. Als je een lijstje kan maken van de personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef (dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één persoon (je co-promotor/opdrachtgever).
 
-\section{History}
+\section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}
+\label{sec:onderzoeksvraag}
 
-To understand the rest of this paper, you’ll need to know what a module is. Modular programming breaks a program up into chunks based on functionality and often in separate files. These chunks are called modules. Modules are then linked together to form an application. 
+Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv. ``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag. Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je onderzoek gaat over performantiemetingen, dan 
 
-Node.js, a Javascript runtime for computers and servers, has supported modular programming since the beginning using CommonJS. However support for modules on the web has been slow to arrive. The first module bundlers only came around after 2014. To understand why module bundlers exist, we should first know how web applications were built before them and what problem they solved.
+\section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}
+\label{sec:onderzoeksdoelstelling}
 
-\subsection{Script tags}
+Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor succes? Beschrijf die zo concreet mogelijk. Gaat het bv. om een proof-of-concept, een prototype, een verslag met aanbevelingen, een vergelijkende studie, enz.
 
-Javascript can be linked to, or written directly in, the HTML file of a site using script-tags. Knowing this, we could use a different tag and corresponding Javascript file for each use case. Let’s say we have a file with all the code for authenticating a user and another one for general events (button clicks, \ldots This is fine when we only have two files that aren’t that big, but introduces network bottlenecks when scaled to a larger application. The same is true if we were to put all our code in one large JS file and link it to the HTML. The global scope would also get polluted with our custom functions. As some, or all, the functions are available on the global scope, this could introduce security risks and name collisions. 
+\section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}
+\label{sec:opzet-bachelorproef}
 
-\lstinputlisting[language=HTML]{codeSnippets/scriptTags.html}
+% Het is gebruikelijk aan het einde van de inleiding een overzicht te
+% geven van de opbouw van de rest van de tekst. Deze sectie bevat al een aanzet
+% die je kan aanvullen/aanpassen in functie van je eigen tekst.
 
-\subsection{Immediately invoked function expressions}
+De rest van deze bachelorproef is als volgt opgebouwd:
 
-An Immediately invoked function expression or IIFE is a function that runs as soon as it’s defined. Because each IIFE declares a local scope, it solves the problem of polluting the global one. The use of IFFEs led to so-called task runners: they concatenate all your project files together. The big drawback of task runners is that when one file is changed, the whole project has to be rebuilt. You are also required to manually define all the dependencies up front. They make it easier to reuse functions and whole scripts but do nothing for the build output. You can still end up with a very large Javascript file that the user has to download. 
+In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het onderzoeksdomein, op basis van een literatuurstudie.
 
-\lstinputlisting[language=Javascript]{codeSnippets/IIFE.js}
+In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
 
-\subsection{CommonJS}
+% TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
 
-Before 2009, Javascript ran only in a browser. Node.js introduced a Javascript runtime that could run on computers and servers. This introduced a new set of challenges. As Javascript wasn’t run in the browser and therefore no HTML script-tags were around, how could those applications load new chunks of code? 
-
-CommonJS introduced the require function in Javascript. With it, everything that an external module exports, can be imported. Reusable code can now be imported from any other Javascript file in a project. It makes implementing dependency management easy to understand.
-
-All this came with a big catch: It worked, and still works, great for Node.js applications but it isn’t an official feature of Javascript and therefore browsers don’t support it. As commonJS doesn’t actually bundle the code, web browsers can’t make sense of the different modules that are imported. Something has to do it for them. 
-
-\lstinputlisting[language=Javascript]{codeSnippets/commonJSExport.js}
-
-\lstinputlisting[language=Javascript]{codeSnippets/commonJSImport.js}
-
-\subsection{ECMAScript Modules}
-
-CommonJS wasn’t an official feature of Javascript. ECMAscript (=Javascript) did introduce its own module system in version 6. ECMAScript Modules or ESM, accomplish the same goals as CommonJS, but with a different syntax. Now modern browsers can make sense of modular applications that only use ESMs. 
-
-\lstinputlisting[language=Javascript]{codeSnippets/esmExport.js}
-
-\lstinputlisting[language=Javascript]{codeSnippets/esmImport.js}
-
-\section{Module bundlers}
-
-Developers are always seeking ways to make their lives easier. They wanted to import whatever type of module or any asset for that matter into their project and ship it in a smaller output file than the source to the end-user. This is why the module bundler was born. 
-
-The most essential function of a module bundler is following all imports of a project, that can contain many files, and bundling them into a single file called the bundle. They also minify that bundle to be as small as possible, without affecting its functionality. It does this by removing comments, white-spaces, new lines, … 
-
-Unbundled file: 147 bytes
-\lstinputlisting[language=Javascript]{codeSnippets/unbundled.js}
-Bundled file: 97 bytes
-\lstinputlisting[language=Javascript]{codeSnippets/bundled.js}
-
-All module bundlers around today share these functions along with common concepts. We’ll look at the 2 most important ones. 
-
-\subsubsection{Tree shaking}
-
-Tree shaking is the process of removing dead code. When a module is imported, perhaps only a part of that module is needed. Maybe only one function of that module is used in the project. With tree shaking, the rest of that module that isn’t used, is removed. 
-
-\subsubsection{Code splitting}
-
-Code splitting can be used to divide up the output bundle that is created into smaller files. The partial bundles are then loaded in parallel or when needed. For example: take a website with multiple pages. If the code isn’t split, all the code of all the pages will be contained in a single file and downloaded by the user when the site is requested. In many cases, like a small project, this is fine. That’s why it’s optional. For larger applications however, it could introduce network bottlenecks. If that’s the case, the code can be split into a single or multiple files per page. Then the smaller files are only loaded when the corresponding page is requested. 
-
-\subsection{Bundled development}
-
-In this section, examples of module bundlers that use bundled development will be discussed. Almost every Javascript web bundler is based on the concepts of bundled development. The alternative and more modern approach is unbundled development. The differences and examples will be explained in the next section. 
-
-\subsubsection{Webpack}
-
-Webpack is the most popular module bundler in the world according to NPM downloads. This has much to do with the fact that it's been around the longest. It comes pre-installed in many web frameworks like create-react-app and Next.js. This way, it’s used by many without even knowing it. It comes with an optional built in development server that makes setting up a local development environment easier.
-
-Webpack runs on Node.js. It can do its job without any configuration, however is very configurable if needed. It supports the module types discussed above and more. 
-Because Webpack only understands Javascript and JSON files out of the box, Loaders are used to allow processing of other file types and convert them into valid modules.
-Using Loaders, other types of modules or even assets like images can be imported and processed by WebPack. On top of that, Webpack can also be extended with plugins. They allow for a wide range of extra functionality like bundle optimization. 
-
-The function of a module bundler has already been discussed. But how does Webpack achieve this? Whenever one file depends on another in a project, Webpack sees this dependency and puts it into something called a dependency graph. 
-
-\includegraphics[scale=0.9]{Webpack}
-
-This graph is built recursively. When it is time to build the application, it uses the graph to piece all the files together into one output file that is then shipped to the browser. Webpack does this both in development as in production. 
-
-\subsubsection{Parcel}
-
-Parcel is another Javascript bundler. However it doesn’t run on Node.js, instead the compiler it uses is built with Rust. Rust is a compiled programming language. Without going into too much detail, this means that Rust code is compiled directly to machine code resulting in faster performance. It does many of the same things that Webpack does without any configuration. When it was released, the main feature was that it didn’t need a configuration file and Webpack did. Now however, Webpack can also do its job without one. While a no-configuration approach is great for smaller projects, it isn’t feasible in a large application. 
-
-\subsubsection{Rollup}
-
-\ldots
-
-\subsection{Unbundled development}
-
-The examples we looked at so far are all module bundlers that use the concepts of bundled development. One very important thing to note is the word development. The differences between both approaches lies only in the development phase. The advantages of unbundled development are only noticeable when the developer or the development team is actually developing the application. When it is time to make a production build that the end-user will be able to use, the following unbundled development build tools still use the same module bundlers discussed in the previous section. So in essence, we can’t call the unbundled development build tools module bundlers, because they don’t bundle anything. They do use module bundlers.
-
-Because most browsers now support ESM, bundling all Javascript modules of a project into one output file isn’t necessary. All non-Javascript modules do have to be translated or built to a valid Javascript module using a built tool (in WebPack this is called a Loader). In bundled development, when the development server is started, the whole project first has to be built and bundled; When a file is changed that file is rebuilt and then the whole project is again rebundled. In unbundled development a file is only built when it’s requested, meaning very fast startup time of the server. When a file is built, it is cached indefinitely. The browser will never have to download a file twice until it changes. When a file does change, only that single file has to be rebuilt. 
-
-\includegraphics[scale=0.5]{Bundledvsunbundled}
-
-All this results in very fast development performance compared to bundled development tools like WebPack. However, as mentioned before, unbundled development tools still use traditional module bundlers to make a production build. It does this because the advantages of Tree-shaking, a single output file and other features of module bundlers still hold up in the production phase: Tree-shaking results in a smaller output file; Not all modules are written with ESM; and the list goes on. We’ll now look at two examples of unbundled development tools.
-
-\subsubsection{Snowpack}
-\ldots
-\subsubsection{Vite}
-\ldots
+In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.

@@ -19,36 +19,32 @@
 
 \refsection{0}
   \datalist[entry]{apa/global//global/global}
-    \entry{Pollefliet2011}{book}{}
+    \entry{MaximJow}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=7ca343ebcc6de1727ac22a1a847c21e5}{%
-           family={Pollefliet},
-           familyi={P\bibinitperiod},
-           given={Leen},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84cbd0d9907a098734d612180fd0f841}{%
+           family={Jowkens},
+           familyi={J\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Gent}%
-      }
-      \list{publisher}{1}{%
-        {Academia Press}%
-      }
-      \strng{namehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{fullhash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{bibnamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{authorbibnamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{authornamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{authorfullhash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \strng{namehash}{84cbd0d9907a098734d612180fd0f841}
+      \strng{fullhash}{84cbd0d9907a098734d612180fd0f841}
+      \strng{bibnamehash}{84cbd0d9907a098734d612180fd0f841}
+      \strng{authorbibnamehash}{84cbd0d9907a098734d612180fd0f841}
+      \strng{authornamehash}{84cbd0d9907a098734d612180fd0f841}
+      \strng{authorfullhash}{84cbd0d9907a098734d612180fd0f841}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Schrijven van verslag tot eindwerk: do's en don'ts}
-      \field{year}{2011}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{8}
+      \field{title}{{CTO Roundtable: Cloud Computing}}
+      \field{volume}{52}
+      \field{year}{2009}
+      \field{pages}{50\bibrangedash 56}
+      \range{pages}{7}
     \endentry
   \enddatalist
 \endrefsection
