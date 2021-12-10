@@ -1,0 +1,65 @@
+html,
+body,
+#root {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #340404;
+  color: #ffe1e1;
+  height: 100%;
+  outline: none !important;
+}
+button {
+  outline: none !important;
+}
+
+.dialog {
+  background-color: #12121288;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffe1e1 !important;
+  opacity: 1; /* Firefox */
+}
+
+.dateInput,
+  .yearInput {
+    color: black;
+  }
+
+@media (max-width: 768px) {
+  .dateInput,
+  .yearInput {
+    -webkit-appearance: none;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 0.25rem;
+    border-color: #d0ab00;
+    padding: 0 0.7rem 0 0.7rem;
+  }
+  .yearInput {
+    text-align-last: center;
+    -moz-text-align-last: center;
+  }
+
+  .dateInput::-webkit-inner-spin-button,
+  .dateInput::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
