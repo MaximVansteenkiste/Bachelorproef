@@ -12,8 +12,8 @@
     "react-dom": "^16.8.1"
   },
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "eslintConfig": {
     "extends": "react-app"

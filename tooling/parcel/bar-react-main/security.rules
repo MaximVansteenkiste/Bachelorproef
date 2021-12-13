@@ -1,0 +1,44 @@
+rules_version = '2';
+service cloud.firestore {
+    match /databases/{database}/documents {
+
+        function currentUser() {
+            return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+        }
+
+        function isAdmin() {
+            return request.auth != null && currentUser().isAdmin;
+        }
+
+        function accessingOwnData(userId) {
+            return request.auth != null && request.auth.uid == userId;
+        }
+
+        function accessingOwnGroup(groupId) {
+            return request.auth != null && currentUser().scouts == groupId;
+        }
+
+        match /users/{userId} {
+            allow read: if accessingOwnData(userId) || (isAdmin() && accessingOwnGroup(resource.data.scouts));
+        }
+
+        match /users/{userId}/{document=**} {
+            allow read: if accessingOwnData(userId) || (isAdmin() && accessingOwnGroup(resource.data.scouts));
+        }
+
+        match /groups/{groupId}{
+            allow read: if accessingOwnGroup(groupId);
+        }
+
+        match /groups/{groupId}/transactions/{transactionId} {
+            allow read: if accessingOwnData(resource.data.user) || (isAdmin() && accessingOwnGroup(groupId));
+            allow create: if (accessingOwnData(request.resource.data.user) || (isAdmin() && accessingOwnGroup(groupId))) && request.resource.data.amount > 0;
+        }
+
+        match /groups/{groupId}/transfers/{transferId} {
+            allow read: if accessingOwnData(resource.data.user) || (isAdmin() && accessingOwnGroup(groupId));
+            allow create: if (accessingOwnData(resource.data.user) || (isAdmin() && accessingOwnGroup(groupId))) && request.resource.data.amount > 0;
+        }
+
+    }
+}

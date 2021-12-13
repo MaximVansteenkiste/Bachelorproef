@@ -9,8 +9,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-icons": "^3.10.0",
-    "sass": "^1.44.0"
+    "react-icons": "^3.10.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
@@ -26,11 +25,12 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "parcel": "^2.0.1",
     "parcel-plugin-static-files-copy": "^2.6.0",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "sass": "^1.45.0"
   },
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "jest": {
     "collectCoverageFrom": [
