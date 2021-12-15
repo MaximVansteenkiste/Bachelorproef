@@ -4,7 +4,7 @@ import { Link, useHistory } from "react-router-dom";
 import DropDown from "../../../components/DropDown";
 import { auth } from "../../../firebase";
 import useCurrentUser from "../../../hooks/useCurrentUser";
-
+import React from 'react';
 const debtAlertText = (debt, billingNumber) =>
   debt > 0
     ? `Schulden afbetalen doet u door € ${debt} over te schrijven naar ${billingNumber}.`

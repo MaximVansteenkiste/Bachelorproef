@@ -21,7 +21,7 @@ import UserProfileContainer from "./pages/UserProfile/UserProfileContainer";
 import Export from "./pages/Export";
 import * as sugar from "sugar";
 import * as localNL from "sugar/locales/nl";
-
+import React from 'react';
 export { sugar };
 sugar.extend && sugar.extend();
 sugar.Date.setLocale("nl");

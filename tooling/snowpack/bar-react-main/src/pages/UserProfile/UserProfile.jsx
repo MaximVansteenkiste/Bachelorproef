@@ -6,7 +6,7 @@ import BackHeader from "../../components/BackHeader";
 import CurrencyCard from "../../components/CustomCards/CurrencyCard";
 import Card from "../../components/Card";
 import Input from "../../components/Input";
-
+import React from 'react';
 const UserProfile = ({ canAddPayment, user, transfers, addPayment }) => {
   const { handleSubmit, register } = useForm();
   const onSubmit = (data) => {

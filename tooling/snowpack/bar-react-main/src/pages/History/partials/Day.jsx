@@ -3,7 +3,7 @@ import { number, sugar } from "../../../App";
 import Fade from "react-reveal/Fade";
 import useTransactions from "../../../hooks/api/useTransactions";
 import { useState } from "react";
-
+import React from 'react';
 const Day = () => {
   const [selectedDate, setSelectedDate] = useState(new Date().format("%F"));
   const { data, error, isLoading } = useTransactions({

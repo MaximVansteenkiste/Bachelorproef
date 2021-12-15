@@ -4,7 +4,7 @@ import useLastTransactions from "../../hooks/api/admin/useLastTransactions";
 import { number, sugar } from "../../App";
 import BackHeader from "../../components/BackHeader";
 import useAccounts from "../../hooks/api/admin/useAccounts";
-
+import React from 'react';
 const LastTransactions = () => {
   const { data: transactions } = useLastTransactions();
   const { data: users } = useAccounts();

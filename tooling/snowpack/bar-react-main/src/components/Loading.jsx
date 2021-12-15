@@ -1,3 +1,4 @@
+import React from 'react';
 const Loading = () => {
   return (
     <div className="h-20 grid place-items-center content-center text-center">

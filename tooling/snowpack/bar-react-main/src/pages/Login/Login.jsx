@@ -10,7 +10,7 @@ import Card from "../../components/Card";
 import Input from "../../components/Input";
 import StyledButton from "../../components/StyledButton";
 import firebase from "../../firebase";
-
+import React from 'react';
 const Login = ({ isPasswordForget = false }) => {
   const { setNotification } = useContext(MainContext);
   const { register, handleSubmit } = useForm();

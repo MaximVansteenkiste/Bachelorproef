@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 import Button from "./Button";
 import { AiFillEdit } from "react-icons/ai";
 import { BiSelectMultiple } from "react-icons/bi";
-
+import React from 'react';
 const PeopleOverview = ({
   people,
   hasDelete = false,

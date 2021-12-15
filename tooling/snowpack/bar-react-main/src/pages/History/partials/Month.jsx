@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import { useMemo, useState } from "react";
 import useMonthHistory from "../../../hooks/api/useMonthHistory";
 import useYearHistory from "../../../hooks/api/useYearHistory";
-
+import React from 'react';
 const monthName = (monthNumber) => {
   // eslint-disable-next-line default-case
   switch (Number(monthNumber)) {

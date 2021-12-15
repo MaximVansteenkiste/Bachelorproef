@@ -2,7 +2,7 @@ import { Menu } from "@headlessui/react";
 import { Fragment } from "react";
 import Button from "./Button";
 import Zoom from "react-reveal/Zoom";
-
+import React from 'react';
 const DropDown = ({ Initiator, actions, className, position }) => {
   return (
     <Menu as="div" className="relative inline-block text-left z-10">

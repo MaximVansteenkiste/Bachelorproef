@@ -4,6 +4,7 @@ import Day from "./partials/Day";
 import Month from "./partials/Month";
 import { CgCalendarDates, CgCalendarToday } from "react-icons/cg";
 import Button from "../../components/Button";
+import React from 'react';
 const History = () => {
   const [selectedView, setSelectedView] = useState(true);
 

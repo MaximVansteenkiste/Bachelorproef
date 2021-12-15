@@ -1,6 +1,7 @@
 import { number } from "../../App";
 import Card from "../Card";
 import Flash from "react-reveal/Flash";
+import React from 'react';
 
 const CurrencyCard = ({ amount, subtitle, flash = false }) => {
   return (

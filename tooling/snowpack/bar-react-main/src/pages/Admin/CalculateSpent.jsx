@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 import Card from "../../components/Card";
 import { number, sugar } from "../../App";
 import useAccounts from "../../hooks/api/admin/useAccounts";
-
+import React from 'react';
 const CalculateSpent = () => {
   const { register, handleSubmit } = useForm();
   const [fetchedData, setFetchedData] = useState();

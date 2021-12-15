@@ -1,6 +1,7 @@
 import { number } from "../../App";
 import Card from "../Card";
 import { FiMoreVertical } from "react-icons/fi";
+import React from 'react';
 
 const SpentCard = ({ spent, date, onClick }) => {
   return (

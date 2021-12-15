@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Fade from "react-reveal/Fade";
 import { MainContext } from "../App";
-
+import React from 'react';
 const Notification = ({ notification: { duration = 3000, message, type } }) => {
   const { setNotification } = useContext(MainContext);
 

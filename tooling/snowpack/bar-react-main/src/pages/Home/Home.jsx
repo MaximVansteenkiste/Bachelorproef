@@ -9,7 +9,7 @@ import StyledButton from "../../components/StyledButton";
 import Header from "./partials/Header";
 import useTransactions from "../../hooks/api/useTransactions";
 import OtherPersonSelector from "./partials/OtherPersonSelector";
-
+import React from 'react';
 const date = new Date();
 date.setHours(date.getHours() - 12);
 

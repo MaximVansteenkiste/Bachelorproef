@@ -5,7 +5,7 @@ import UserProfile from "./UserProfile";
 import usePayments from "../../hooks/api/useTransfers";
 import useNewPayment from "../../hooks/api/admin/useNewTransfer";
 import { useMemo } from "react";
-
+import React from 'react';
 const UserProfileContainer = () => {
   const { canAddPayment, ...user } = useCurrentUser();
   const { userId } = useParams();

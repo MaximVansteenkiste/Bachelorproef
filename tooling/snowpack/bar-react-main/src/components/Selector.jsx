@@ -1,7 +1,7 @@
 import { Listbox } from "@headlessui/react";
 import { MdExpandMore } from "react-icons/md";
 import Fade from "react-reveal/Fade";
-
+import React from 'react';
 const Selector = ({ selected, setSelected, options, title }) => {
   return (
     <Listbox value={selected} onChange={setSelected}>
