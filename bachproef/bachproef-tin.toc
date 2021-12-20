@@ -49,51 +49,51 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Webpack}{23}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Parcel}{24}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Parcel}{25}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Snowpack}{25}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.3}Snowpack}{26}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.4}Vite}{26}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Bestaand project}{26}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Bestaand project}{27}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Mortage}{26}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Mortage}{27}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{26}{section*.13}%
+\contentsline {subsubsection}{Parcel}{27}{section*.13}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Snowpack}{27}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{27}{section*.15}%
+\contentsline {subsubsection}{Vite}{28}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Mortage}{27}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Mortage}{28}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{27}{section*.16}%
+\contentsline {subsubsection}{Parcel}{28}{section*.16}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Snowpack}{28}{section*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{28}{section*.18}%
+\contentsline {subsubsection}{Vite}{29}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Bar}{28}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Bar}{29}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{28}{section*.19}%
+\contentsline {subsubsection}{Parcel}{29}{section*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Snowpack}{28}{section*.20}%
+\contentsline {subsubsection}{Snowpack}{29}{section*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{28}{section*.21}%
+\contentsline {subsubsection}{Vite}{29}{section*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{29}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Conclusie}{31}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{31}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{33}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introduction}{31}{section.A.1}%
+\contentsline {section}{\numberline {A.1}Introduction}{33}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{32}{section.A.2}%
+\contentsline {section}{\numberline {A.2}State-of-the-art}{34}{section.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodology}{32}{section.A.3}%
+\contentsline {section}{\numberline {A.3}Methodology}{34}{section.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Anticipated results}{32}{section.A.4}%
+\contentsline {section}{\numberline {A.4}Anticipated results}{34}{section.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Anticipated conclusions}{32}{section.A.5}%
+\contentsline {section}{\numberline {A.5}Anticipated conclusions}{34}{section.A.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}References}{33}{section.A.6}%
+\contentsline {section}{\numberline {A.6}References}{35}{section.A.6}%
 \contentsfinish 

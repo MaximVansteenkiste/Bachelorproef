@@ -1,9 +1,14 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'bachproef-tin.blg'
-[56] biber-darwin:340> INFO - === Mon Dec 20, 2021, 15:01:28
-[68] Biber.pm:415> INFO - Reading 'bachproef-tin.bcf'
-[145] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[150] Utils.pm:395> WARN - The file 'bachproef-tin.bcf' does not contain any citations!
-[158] bbl.pm:654> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
-[158] bbl.pm:757> INFO - Output to bachproef-tin.bbl
-[159] Biber.pm:128> INFO - WARNINGS: 1
+[49] biber-darwin:340> INFO - === Mon Dec 20, 2021, 20:26:29
+[60] Biber.pm:415> INFO - Reading 'bachproef-tin.bcf'
+[140] Biber.pm:952> INFO - Found 2 citekeys in bib section 0
+[152] Biber.pm:4340> INFO - Processing section 0
+[160] Biber.pm:4531> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
+[160] bibtex.pm:1689> INFO - LaTeX decoding ...
+[165] bibtex.pm:1494> INFO - Found BibTeX data source 'bachproef-tin.bib'
+[165] Biber.pm:4531> INFO - Looking for bibtex format file '../voorstel/voorstel.bib' for section 0
+[166] bibtex.pm:1689> INFO - LaTeX decoding ...
+[169] bibtex.pm:1494> INFO - Found BibTeX data source '../voorstel/voorstel.bib'
+[170] Utils.pm:411> ERROR - BibTeX subsystem: /var/folders/m4/61z40ylj2_13s47q8m_vtnk40000gn/T/biber_tmp_L2cq/1fe87c1e0d253acadef7145fa298b19d_86072.utf8, line 18, syntax error: found "link", expected end of entry ("}" or ")") (skipping to next "@")
+[170] Biber.pm:132> INFO - ERRORS: 1

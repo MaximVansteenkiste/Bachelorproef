@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.24)  20 DEC 2021 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.24)  20 DEC 2021 20:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1023,30 +1023,30 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'dutch'.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 81.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 82.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.aux)
 \openout1 = `bachproef-tin.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1102,21 +1102,21 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count488
-LaTeX Info: Redefining \microtypecontext on input line 81.
+LaTeX Info: Redefining \microtypecontext on input line 82.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 81.
+LaTeX Info: Redefining \showhyphens on input line 82.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 81.
+Package hyperref Info: Link coloring OFF on input line 82.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1126,9 +1126,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count489
 )
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 Package biblatex Info: Trying to load language 'dutch' -> 'dutch-apa'...
 Package biblatex Info: ... file 'dutch-apa.lbx' found.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-apa/dutch-apa.lbx
@@ -1181,8 +1181,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'bachproef-tin.bbl' found.
  (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.bbl)
-Package biblatex Info: Reference section=0 on input line 81.
-Package biblatex Info: Reference segment=0 on input line 81.
+Package biblatex Info: Reference section=0 on input line 82.
+Package biblatex Info: Reference segment=0 on input line 82.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1218,7 +1218,7 @@ Package biblatex Info: Reference segment=0 on input line 81.
 <img//HOGENT_Logo_Pos_rgb.png, id=7, 3503.0875pt x 1975.38pt>
 File: img//HOGENT_Logo_Pos_rgb.png Graphic file (type png)
 <use img//HOGENT_Logo_Pos_rgb.png>
-Package pdftex.def Info: img//HOGENT_Logo_Pos_rgb.png  used on input line 91.
+Package pdftex.def Info: img//HOGENT_Logo_Pos_rgb.png  used on input line 92.
 (pdftex.def)             Requested size: 71.13188pt x 40.08864pt.
  [1
 
@@ -1262,7 +1262,7 @@ Package pdftex.def Info: img//HOGENT_Logo_Pos_rgb.png  used on input line 91.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 \inserttitlepage
+l.92 \inserttitlepage
                       [1
 
 
@@ -1386,23 +1386,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Hoofdstuk 3.
-[23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25] [26] [27]) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/conclusie.tex [28]
-Hoofdstuk 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29
-
-]) [30]
-B\babelshorthand{"y}lage A.
-(../voorstel/voorstel-inhoud.tex
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 7.
+[23] (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/craCreate.txt)
+<img//fileStructureInitCRA.png, id=281, 175.15437pt x 175.15437pt>
+File: img//fileStructureInitCRA.png Graphic file (type png)
+<use img//fileStructureInitCRA.png>
+Package pdftex.def Info: img//fileStructureInitCRA.png  used on input line 23.
+(pdftex.def)             Requested size: 175.15395pt x 175.15395pt.
+ (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/importCSS.js)
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 30.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1410,15 +1405,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 7.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 30.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 7.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 30.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 7.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 30.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
@@ -1426,43 +1421,86 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 30.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+
+
+LaTeX Warning: Citation 'https://github.com/facebook/create-react-app/tree/main/packages/react-scripts' on page 24 undefined on input line 30.
+
+
+LaTeX Warning: Citation 'https://github.com/facebook/create-react-app/blob/main/packages/react-scripts/config/webpack.config.js' on page 24 undefined on input line 32.
+
+
+Overfull \hbox (36.1637pt too wide) in paragraph at lines 32--32
+[][][][]\T1/ptm/m/n/10 (-20) .| 
+ []
+
+[24 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//fileStructureInitCRA.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 41.
+
+[25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26] [27] [28]) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/conclusie.tex [29] [30
+
+]
+Hoofdstuk 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31
+ [31]) [32]
+B\babelshorthand{"y}lage A.
+(../voorstel/voorstel-inhoud.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [32])
+ [33
 
-LaTeX Warning: Empty bibliography on input line 165.
+] [34])
 
-[33] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.aux)
+LaTeX Warning: Empty bibliography on input line 166.
+
+[35] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                bachproef-tin
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35649 strings out of 478994
- 643380 string characters out of 5858183
- 1672954 words of memory out of 5000000
- 52098 multiletter control sequences out of 15000+600000
- 461433 words of font info for 216 fonts, out of 8000000 for 9000
+ 36058 strings out of 478994
+ 650391 string characters out of 5858183
+ 1673320 words of memory out of 5000000
+ 52428 multiletter control sequences out of 15000+600000
+ 481987 words of font info for 274 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,12n,103p,915b,4760s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.pdf (35 pages, 1045827 bytes).
+ 102i,14n,103p,915b,4760s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.pdf (37 pages, 1076307 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 399 compressed objects within 4 object streams
- 139 named destinations out of 1000 (max. 500000)
- 63772 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 512 PDF objects out of 1000 (max. 8388607)
+ 424 compressed objects within 5 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 91937 words of extra memory for PDF output out of 106986 (max. 10000000)
 

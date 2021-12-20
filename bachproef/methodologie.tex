@@ -16,18 +16,20 @@ Volgende factoren worden gebruikt om een eenduidige vergelijking te maken. Daarn
 \subsection{Webpack}
 Een nieuw project opzetten met WebPack kan op veel verschillende manieren: zelf een project opzetten en de configuratie volledig manueel schrijven. Aangezien niet velen dit pad bewandelen, zullen we gebruik maken van de mees populaire manier om een React project op te zetten. Create-react-app of CRA is een minimale framework gemaakt door de makers van React zelf om gemakkelijk een project op te zetten. Het is één van de vele frameworks die Webpack als module bundler gebruikt. Om te beginnen, voeren we volgende commando’s uit. 
 
+\lstinputlisting[language=bash]{codeSnippets/craCreate.txt}
 
 Bovenstaande code maakt een project aan met create-react-app. Daarna ziet ons project er als volgt uit. Merk op dat er geen config bestand voor webpack is.
 
+\includegraphics{fileStructureInitCRA}
 
 Alles wat in de public folder staat, zijn statische assets. Die zullen dus via een url bereikbaar zijn. Als we kijken in het index.html bestand, merken we op dat er geen enkele script-tag aanwezig is. Hierover later meer.
 In de src folder staat alles wat door Webpack zal gebundeld worden. Standaard worden er css bestanden aangemaakt voor styling en een logo in svg formaat. Dit wordt gedaan om aan te tonen dat we deze assets gewoon in de Javascript code kunnen importeren, de bundler kan hiermee overweg. 
 
-Code snippet app.js bij imports
+\lstinputlisting[language=Javascript]{codeSnippets/importCSS.js}
 
-In het package.json bestand staat er allemaal info over dit project. In het dependencies gedeelte staan alle externe packages (en hun versie) die dit project gebruikt. Nieuwe packages worden gedownload aan de hand van Node Package Manager of NPM. Bij de dependencies staat een package genaamd “react-scripts”. React-scripts is een package gemaakt door de makers van React en is de motor achter CRA. Het bevat scripts en configuratie bestanden voor CRA. 
+In het package.json bestand staat er allemaal info over dit project. In het dependencies gedeelte staan alle externe packages (en hun versie) die dit project gebruikt. Nieuwe packages worden gedownload aan de hand van Node Package Manager of NPM. Bij de dependencies staat een package genaamd “react-scripts”. React-scripts \footcite{https://github.com/facebook/create-react-app/tree/main/packages/react-scripts} is een package gemaakt door de makers van React en is de motor achter CRA. Het bevat scripts en configuratie bestanden voor CRA. 
 
-Wat voor dit onderzoek relevant is, is dat het de Webpack.config bevat. Dit bestand bestaat uit maar liefst 700+ lijnen code. Nu is de reden dat we CRA gebruiken, en niet van nul beginnen, om dit project te maken meteen duidelijk. 
+Wat voor dit onderzoek relevant is, is dat het de Webpack.config bevat. Dit bestand bestaat uit maar liefst 700+ lijnen code \footcite{https://github.com/facebook/create-react-app/blob/main/packages/react-scripts/config/webpack.config.js}. Nu is de reden dat we CRA gebruiken, en niet van nul beginnen, om dit project te maken meteen duidelijk. 
 De volgende stap is om het project lokaal op te starten. React-scripts gebruikt de ingebouwde development server van Webpack. We voeren volgend commando uit.
 
 Hierna opent de browser en wordt de interface getoond. 
@@ -35,6 +37,25 @@ Hierna opent de browser en wordt de interface getoond.
 Om van nul te beginnen was dit project moeiteloos opgezet. Een handige package create-react-app deed al het werk voor ons. We hebben geen module bundler moeten configureren. Na het aanmaken van het CRA project, konden we direct beginnen programmeren. 
 
 We zouden de applicatie ook van nul kunnen configureren met Webpack maar zoals hierboven al vermeld zou er veel configuratie aan vooraf gaan.
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{@{}lrrrr@{}}
+    \toprule
+                                                                                                  & \multicolumn{1}{l}{\textbf{Nieuw project}} & \multicolumn{1}{l}{\textbf{Mortage}} & \multicolumn{1}{l}{\textbf{ToDoist}} & \multicolumn{1}{l}{\textbf{Bar}} \\ \midrule
+    \textbf{Grootte project (MB)}                                                                 & 0,037                                      & 0,017                                & 0,106                                & 26,6                             \\
+    \textbf{Grootte node\_modules (MB)}                                                           & 214,1                                      & 231                                  & 376,6                                & 442,4                            \\
+    \textbf{Grootte uitvoer (MB)}                                                                 & 0,514                                      & 0,892                                & 3,9                                  & 33,9                             \\
+    \textbf{Snelheid creatie uitvoer (s)}                                                         & 3,67                                       & 4,67                                 & 6,33                                 & 13,67                            \\
+    \multicolumn{1}{r}{1}                                                                         & 5                                          & 7                                    & 10                                   & 21                               \\
+    \multicolumn{1}{r}{2}                                                                         & 3                                          & 3                                    & 5                                    & 10                               \\
+    \multicolumn{1}{r}{3}                                                                         & 3                                          & 4                                    & 4                                    & 10                               \\
+    \textbf{\begin{tabular}[c]{@{}l@{}}Snelheid opstarten \\ development server (s)\end{tabular}} & 2,67                                       & 3,67                                 & 4,00                                 & 8,67                             \\
+    \multicolumn{1}{r}{1}                                                                         & 4                                          & 5                                    & 6                                    & 12                               \\
+    \multicolumn{1}{r}{2}                                                                         & 2                                          & 3                                    & 3                                    & 7                                \\
+    \multicolumn{1}{r}{3}                                                                         & 2                                          & 3                                    & 3                                    & 7                                \\ \bottomrule
+    \end{tabular}
+    \end{table}
 
 \subsection{Parcel}
 Bij Webpack gebruikten we een framework om het vele configuratie werk te omzeilen. Bij Parcel is dit niet nodig. Zoals in de literatuurstudie vermeld werkt Parcel op een gelijkaardige manier als Webpack, maar dan met zo min mogelijk configuratie. Om een nieuw project op te zetten met Parcel, gaan we dus geen framework gebruiken.
