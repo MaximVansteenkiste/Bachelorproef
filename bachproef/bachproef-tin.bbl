@@ -16,37 +16,5 @@
   {}
 \endgroup
 
-
-\refsection{0}
-  \datalist[entry]{apa/global//global/global}
-    \entry{MaximJow}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=84cbd0d9907a098734d612180fd0f841}{%
-           family={Jowkens},
-           familyi={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{84cbd0d9907a098734d612180fd0f841}
-      \strng{fullhash}{84cbd0d9907a098734d612180fd0f841}
-      \strng{bibnamehash}{84cbd0d9907a098734d612180fd0f841}
-      \strng{authorbibnamehash}{84cbd0d9907a098734d612180fd0f841}
-      \strng{authornamehash}{84cbd0d9907a098734d612180fd0f841}
-      \strng{authorfullhash}{84cbd0d9907a098734d612180fd0f841}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Communications of the ACM}
-      \field{number}{8}
-      \field{title}{{CTO Roundtable: Cloud Computing}}
-      \field{volume}{52}
-      \field{year}{2009}
-      \field{pages}{50\bibrangedash 56}
-      \range{pages}{7}
-    \endentry
-  \enddatalist
-\endrefsection
 \endinput
 

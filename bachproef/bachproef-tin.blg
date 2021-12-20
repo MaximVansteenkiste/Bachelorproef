@@ -1,15 +1,9 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'bachproef-tin.blg'
-[49] biber-darwin:340> INFO - === Tue Dec  7, 2021, 14:07:05
-[60] Biber.pm:415> INFO - Reading 'bachproef-tin.bcf'
-[137] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[149] Biber.pm:4340> INFO - Processing section 0
-[157] Biber.pm:4531> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
-[158] bibtex.pm:1689> INFO - LaTeX decoding ...
-[162] bibtex.pm:1494> INFO - Found BibTeX data source 'bachproef-tin.bib'
-[187] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[187] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[187] Biber.pm:4168> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
-[187] Biber.pm:4174> INFO - No sort tailoring available for locale 'nl-NL'
-[188] bbl.pm:654> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
-[189] bbl.pm:757> INFO - Output to bachproef-tin.bbl
+[56] biber-darwin:340> INFO - === Mon Dec 20, 2021, 15:01:28
+[68] Biber.pm:415> INFO - Reading 'bachproef-tin.bcf'
+[145] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[150] Utils.pm:395> WARN - The file 'bachproef-tin.bcf' does not contain any citations!
+[158] bbl.pm:654> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
+[158] bbl.pm:757> INFO - Output to bachproef-tin.bbl
+[159] Biber.pm:128> INFO - WARNINGS: 1
