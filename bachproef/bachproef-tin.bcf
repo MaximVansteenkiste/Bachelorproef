@@ -2812,8 +2812,9 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">../voorstel/voorstel.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">https://github.com/facebook/create-react-app/tree/main/packages/react-scripts</bcf:citekey>
-    <bcf:citekey order="2">https://github.com/facebook/create-react-app/blob/main/packages/react-scripts/config/webpack.config.js</bcf:citekey>
+    <bcf:citekey order="1">facebook-2018</bcf:citekey>
+    <bcf:citekey order="2">facebook-2021</bcf:citekey>
+    <bcf:citekey order="3">houghton-2019</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
