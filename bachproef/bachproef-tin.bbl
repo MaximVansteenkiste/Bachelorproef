@@ -1,0 +1,221 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{facebook-2018}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d85544fce402c7a2a96a48078edaf203}{%
+           family={{Facebook}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{fullhash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{bibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{authorbibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{authornamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{authorfullhash}{d85544fce402c7a2a96a48078edaf203}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{12}
+      \field{title}{create-react-app repository}
+      \field{urlday}{21}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/facebook/create-react-app/tree/main/packages/react-scripts
+      \endverb
+      \verb{url}
+      \verb https://github.com/facebook/create-react-app/tree/main/packages/react-scripts
+      \endverb
+    \endentry
+    \entry{facebook-2021}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d85544fce402c7a2a96a48078edaf203}{%
+           family={{Facebook}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{fullhash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{bibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{authorbibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{authornamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{authorfullhash}{d85544fce402c7a2a96a48078edaf203}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{9}
+      \field{title}{create-react-app/webpack.config.js}
+      \field{urlday}{21}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/facebook/create-react-app/blob/main/packages/react-scripts/config/webpack.config.js
+      \endverb
+      \verb{url}
+      \verb https://github.com/facebook/create-react-app/blob/main/packages/react-scripts/config/webpack.config.js
+      \endverb
+    \endentry
+    \entry{hadwen-2021}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a352c4a05499eeb9921e0c3d2a09015a}{%
+           family={Hadwen},
+           familyi={H\bibinitperiod},
+           given={Karlhadwen},
+           giveni={K\bibinitperiod\bibinitdelim .\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{a352c4a05499eeb9921e0c3d2a09015a}
+      \strng{fullhash}{a352c4a05499eeb9921e0c3d2a09015a}
+      \strng{bibnamehash}{a352c4a05499eeb9921e0c3d2a09015a}
+      \strng{authorbibnamehash}{a352c4a05499eeb9921e0c3d2a09015a}
+      \strng{authornamehash}{a352c4a05499eeb9921e0c3d2a09015a}
+      \strng{authorfullhash}{a352c4a05499eeb9921e0c3d2a09015a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{month}{9}
+      \field{title}{Karlhadwen/todoist}
+      \field{urlday}{21}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/karlhadwen/todoist
+      \endverb
+      \verb{url}
+      \verb https://github.com/karlhadwen/todoist
+      \endverb
+    \endentry
+    \entry{houghton-2019}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2adc9d2d1552a47087eda65393e9e60f}{%
+           family={Houghton\bibnamedelimb },
+           familyi={H\bibinitperiod},
+           given={Paulhoughton},
+           giveni={P\bibinitperiod\bibinitdelim .\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2adc9d2d1552a47087eda65393e9e60f}
+      \strng{fullhash}{2adc9d2d1552a47087eda65393e9e60f}
+      \strng{bibnamehash}{2adc9d2d1552a47087eda65393e9e60f}
+      \strng{authorbibnamehash}{2adc9d2d1552a47087eda65393e9e60f}
+      \strng{authornamehash}{2adc9d2d1552a47087eda65393e9e60f}
+      \strng{authorfullhash}{2adc9d2d1552a47087eda65393e9e60f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{2}
+      \field{title}{GitHub - paulhoughton/mortgage: Mortgage overpayment calculator}
+      \field{urlday}{21}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/paulhoughton/mortgage
+      \endverb
+      \verb{url}
+      \verb https://github.com/paulhoughton/mortgage
+      \endverb
+    \endentry
+    \entry{vansteenkiste-2021}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9a0b4bb17765dcec8c97ccb0153a42ac}{%
+           family={Vansteenkiste},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{9a0b4bb17765dcec8c97ccb0153a42ac}
+      \strng{fullhash}{9a0b4bb17765dcec8c97ccb0153a42ac}
+      \strng{bibnamehash}{9a0b4bb17765dcec8c97ccb0153a42ac}
+      \strng{authorbibnamehash}{9a0b4bb17765dcec8c97ccb0153a42ac}
+      \strng{authornamehash}{9a0b4bb17765dcec8c97ccb0153a42ac}
+      \strng{authorfullhash}{9a0b4bb17765dcec8c97ccb0153a42ac}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{MaximVansteenkiste/bar-react}
+      \field{urlday}{21}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/MaximVansteenkiste/bar-react
+      \endverb
+      \verb{url}
+      \verb https://github.com/MaximVansteenkiste/bar-react
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
