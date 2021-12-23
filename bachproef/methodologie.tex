@@ -29,7 +29,7 @@ Bovenstaande code maakt een project aan met create-react-app. Daarna ziet ons pr
 \begin{figure}[h]
 \includegraphics{fileStructureInitCRA}
     \centering
-    \caption[]{Bestandsstructuur nieuw CRA project}
+    \caption{Bestandsstructuur nieuw CRA project}
 \end{figure}
 
 Alles wat in de public map staat, zijn statische assets. Die zullen dus via een url bereikbaar zijn. Als we kijken in het index.html bestand, merken we op dat er geen enkele script-tag aanwezig is. Hierover later meer.
@@ -60,7 +60,7 @@ De volgende stap is om het project lokaal op te starten. React-scripts gebruikt 
     \textbf{} & 2 \\
     \textbf{} & 2
     \end{tabular}
-    \caption[]{Overzicht nieuw project met Webpack}
+    \caption{Overzicht nieuw project met Webpack}
     \end{table}
 
 \subsection{Parcel}
@@ -71,7 +71,7 @@ Maak een nieuwe map aan waar het project zal leven. Aangezien we van nul beginne
 \begin{figure}[h]
     \includegraphics{parcelNew}
         \centering
-        \caption[]{Aan te maken bestanden voor nieuw Parcel project}
+        \caption{Aan te maken bestanden voor nieuw Parcel project}
     \end{figure}
 
     Hierna moeten er nog enkele packages geïnstalleerd worden, namelijk: React, React-DOM en natuurlijk Parcel. In de package.json moet er ook nog meegegeven worden waar de index.html zich bevindt. Merk op dat er geen apart configuratiebestand voor Parcel is. Nu kan het project opgestart worden met hetzelfde commando als bij Webpack.
@@ -119,7 +119,7 @@ Mortage is een ideaal project om mee te starten aangezien het geen speciale tech
 \begin{figure}[h]
     \includegraphics{Mortage_languages}
         \centering
-        \caption[]{Overzicht gebruikte technologieën van het Mortage project}
+        \caption{Overzicht gebruikte technologieën van het Mortage project}
     \end{figure}
 
 \subsubsection{Parcel}
@@ -159,7 +159,7 @@ Todoist \autocite{hadwen-2021} is een simpele to-do webapplicatie. Een gebruiker
 \begin{figure}[h]
     \includegraphics{Todoist_languages}
         \centering
-        \caption[]{Overzicht gebruikte technologieën van het Todoist project}
+        \caption{Overzicht gebruikte technologieën van het Todoist project}
     \end{figure}
 
 \subsubsection{Parcel}
@@ -180,7 +180,7 @@ Als laatste nemen we het grootste en meest complexe project van deze studie onde
 \begin{figure}[h]
     \includegraphics{Barapp_languages}
         \centering
-        \caption[]{Overzicht gebruikte technologieën van het BarApp project}
+        \caption{Overzicht gebruikte technologieën van het BarApp project}
     \end{figure}
 
     TypeScript is net als SCCS een superset of uitbreiding. Deze keer niet van CSS maar van Javascript. De browser begrijpt geen TypeScript dus moet het eerst vertaald worden naar normale Javascript. De build tools zijn hier verantwoordelijk voor.
@@ -201,7 +201,7 @@ Zoals in de literatuurstudie uitgelegd, ondersteunen moderne browsers enkel ESM.
 \begin{figure}[h]
     \includegraphics{bundledVSUnbundledFiles}
         \centering
-        \caption[]{Bestandsstructuur unbundled vs bundled}
+        \caption{Bestandsstructuur unbundled vs bundled}
     \end{figure}
 
     Merk op dat bij de unbundled versie van dit project, de bestandsstructuur dezelfde is als hoe we het project maken. Een bundler zoals Webpack, steekt alle bestanden die naar elkaar verwijzen samen in één bestand dat dan naar de browser gestuurd wordt. Unbundled build tools zoals Snowpack laten de bestandsstructuur met rust omdat ze vertrouwen op het feit dat moderne browsers ESM ondersteunen. Dus zolang er in het project enkel ESM wordt gebruikt, is er geen probleem. Jammer genoeg staat er in de App.jsx een require functie, een CommonJS module dus. Omdat Snowpack niets doet om dit te vertalen zal de CommonJS module manueel omgevormd moeten worden naar ESM. Gelukkig wordt die vertaling wel uitgevoerd voor de nodemodules, want die bevatten ook vaak CommonJS.
