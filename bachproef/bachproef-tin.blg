@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'bachproef-tin.blg'
-[53] biber-darwin:340> INFO - === Thu Dec 23, 2021, 19:43:04
-[66] Biber.pm:415> INFO - Reading 'bachproef-tin.bcf'
-[143] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
-[156] Biber.pm:4340> INFO - Processing section 0
-[164] Biber.pm:4531> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
-[165] bibtex.pm:1689> INFO - LaTeX decoding ...
-[170] bibtex.pm:1494> INFO - Found BibTeX data source 'bachproef-tin.bib'
-[209] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[209] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[209] Biber.pm:4168> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
-[209] Biber.pm:4174> INFO - No sort tailoring available for locale 'nl-NL'
-[216] bbl.pm:654> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
-[218] bbl.pm:757> INFO - Output to bachproef-tin.bbl
+[49] biber-darwin:340> INFO - === Fri Dec 24, 2021, 09:52:26
+[60] Biber.pm:415> INFO - Reading 'bachproef-tin.bcf'
+[137] Biber.pm:952> INFO - Found 14 citekeys in bib section 0
+[149] Biber.pm:4340> INFO - Processing section 0
+[156] Biber.pm:4531> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
+[157] bibtex.pm:1689> INFO - LaTeX decoding ...
+[166] bibtex.pm:1494> INFO - Found BibTeX data source 'bachproef-tin.bib'
+[228] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[228] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[228] Biber.pm:4168> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
+[228] Biber.pm:4174> INFO - No sort tailoring available for locale 'nl-NL'
+[239] bbl.pm:654> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
+[243] bbl.pm:757> INFO - Output to bachproef-tin.bbl

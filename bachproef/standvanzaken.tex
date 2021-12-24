@@ -16,9 +16,9 @@ We need something that will bundle all the different Javascript files and depend
 
 \section{History}
 
-To understand the rest of this paper, you’ll need to know what a module is. Modular programming breaks a program up into chunks based on functionality and often in separate files. These chunks are called modules. Modules are then linked together to form an application. 
+To understand the rest of this paper, you’ll need to know what a module is. Modular programming breaks a program up into chunks based on functionality and often in separate files. These chunks are called modules. Modules are then linked together to form an application. \autocite{webpack-no-dateB} \autocite{mozilla-2021A}
 
-Node.js, a Javascript runtime for computers and servers, has supported modular programming since the beginning using CommonJS. However support for modules on the web has been slow to arrive. The first module bundlers only came around after 2014. To understand why module bundlers exist, we should first know how web applications were built before them and what problem they solved.
+Node.js, a Javascript runtime for computers and servers, has supported modular programming since the beginning using CommonJS. However support for modules on the web has been slow to arrive. The first module bundlers only came around after 2014. To understand why module bundlers exist, we should first know how web applications were built before them and what problem they solved. \autocite{webpack-no-dateA}
 
 \subsection{Script tags}
 
@@ -28,13 +28,13 @@ Javascript can be linked to, or written directly in, the HTML file of a site usi
 
 \subsection{Immediately invoked function expressions}
 
-An Immediately invoked function expression or IIFE is a function that runs as soon as it’s defined. Because each IIFE declares a local scope, it solves the problem of polluting the global one. The use of IFFEs led to so-called task runners: they concatenate all your project files together. The big drawback of task runners is that when one file is changed, the whole project has to be rebuilt. You are also required to manually define all the dependencies up front. They make it easier to reuse functions and whole scripts but do nothing for the build output. You can still end up with a very large Javascript file that the user has to download. 
+An Immediately invoked function expression or IIFE is a function that runs as soon as it’s defined \autocite{mozilla-2021B}. Because each IIFE declares a local scope, it solves the problem of polluting the global one. The use of IFFEs led to so-called task runners: they concatenate all your project files together. The big drawback of task runners is that when one file is changed, the whole project has to be rebuilt. You are also required to manually define all the dependencies up front. They make it easier to reuse functions and whole scripts but do nothing for the build output. You can still end up with a very large Javascript file that the user has to download. 
 
 \lstinputlisting[language=Javascript]{codeSnippets/IIFE.js}
 
 \subsection{CommonJS}
 
-Before 2009, Javascript ran only in a browser. Node.js introduced a Javascript runtime that could run on computers and servers. This introduced a new set of challenges. As Javascript wasn’t run in the browser and therefore no HTML script-tags were around, how could those applications load new chunks of code? 
+Before 2009, Javascript ran only in a browser. Node.js introduced a Javascript runtime that could run on computers and servers. This introduced a new set of challenges \autocite{crutchfield-2018}. As Javascript wasn’t run in the browser and therefore no HTML script-tags were around, how could those applications load new chunks of code? 
 
 CommonJS introduced the require function in Javascript. With it, everything that an external module exports, can be imported. Reusable code can now be imported from any other Javascript file in a project. It makes implementing dependency management easy to understand.
 
@@ -73,6 +73,8 @@ Tree shaking is the process of removing dead code. When a module is imported, pe
 
 Code splitting can be used to divide up the output bundle that is created into smaller files. The partial bundles are then loaded in parallel or when needed. For example: take a website with multiple pages. If the code isn’t split, all the code of all the pages will be contained in a single file and downloaded by the user when the site is requested. In many cases, like a small project, this is fine. That’s why it’s optional. For larger applications however, it could introduce network bottlenecks. If that’s the case, the code can be split into a single or multiple files per page. Then the smaller files are only loaded when the corresponding page is requested. 
 
+Het vervolg van dit hoofdstuk is opgedeeld in twee delen. De module bundlers die gaan besproken worden kunnen namelijk opgedeeld worden in twee categorieën. De module bundlers die besproken worden zijn gekozen aan de hand van populariteit \autocite{stateofjs-2020} binnen hun categorie. Voor elke categorie is het mogelijk om veel meer voorbeelden te vinden maar aangezien ze gebaseerd zijn op dezelfde principes, is het zinloos voor deze studie om die ook te vergelijken. Webpack en de categorie tot wie het behoort wordt vergeleken met een meer moderne manier van aanpak en voorbeelden daarvan.
+
 \subsection{Bundled development}
 
 In this section, examples of module bundlers that use bundled development will be discussed. Almost every Javascript web bundler is based on the concepts of bundled development. The alternative and more modern approach is unbundled development. The differences and examples will be explained in the next section. 
@@ -87,7 +89,10 @@ Using Loaders, other types of modules or even assets like images can be imported
 
 The function of a module bundler has already been discussed. But how does Webpack achieve this? Whenever one file depends on another in a project, Webpack sees this dependency and puts it into something called a dependency graph. 
 
+\begin{figure}[h]
 \includegraphics[scale=0.9]{Webpack}
+    \caption{Essentiele functie module bundler \autocite{webapck-no-date}}
+\end{figure}
 
 This graph is built recursively. When it is time to build the application, it uses the graph to piece all the files together into one output file that is then shipped to the browser. Webpack does this both in development as in production. 
 
@@ -95,21 +100,26 @@ This graph is built recursively. When it is time to build the application, it us
 
 Parcel is another Javascript bundler. However it doesn’t run on Node.js, instead the compiler it uses is built with Rust. Rust is a compiled programming language. Without going into too much detail, this means that Rust code is compiled directly to machine code resulting in faster performance. It does many of the same things that Webpack does without any configuration. When it was released, the main feature was that it didn’t need a configuration file and Webpack did. Now however, Webpack can also do its job without one. While a no-configuration approach is great for smaller projects, it isn’t feasible in a large application. 
 
-\subsubsection{Rollup}
-
-\ldots
-
 \subsection{Unbundled development}
 
 The examples we looked at so far are all module bundlers that use the concepts of bundled development. One very important thing to note is the word development. The differences between both approaches lies only in the development phase. The advantages of unbundled development are only noticeable when the developer or the development team is actually developing the application. When it is time to make a production build that the end-user will be able to use, the following unbundled development build tools still use the same module bundlers discussed in the previous section. So in essence, we can’t call the unbundled development build tools module bundlers, because they don’t bundle anything. They do use module bundlers.
 
 Because most browsers now support ESM, bundling all Javascript modules of a project into one output file isn’t necessary. All non-Javascript modules do have to be translated or built to a valid Javascript module using a built tool (in WebPack this is called a Loader). In bundled development, when the development server is started, the whole project first has to be built and bundled; When a file is changed that file is rebuilt and then the whole project is again rebundled. In unbundled development a file is only built when it’s requested, meaning very fast startup time of the server. When a file is built, it is cached indefinitely. The browser will never have to download a file twice until it changes. When a file does change, only that single file has to be rebuilt. 
-
+\begin{figure}[h]
 \includegraphics[scale=0.5]{Bundledvsunbundled}
+    \caption{Gebundeld vs ongebundeld \autocite{snowpack-no-date}}
+\end{figure}
 
-All this results in very fast development performance compared to bundled development tools like WebPack. However, as mentioned before, unbundled development tools still use traditional module bundlers to make a production build. It does this because the advantages of Tree-shaking, a single output file and other features of module bundlers still hold up in the production phase: Tree-shaking results in a smaller output file; Not all modules are written with ESM; and the list goes on. We’ll now look at two examples of unbundled development tools.
+All this results in very fast development performance compared to bundled development tools like WebPack. However, as mentioned before, unbundled development tools still use traditional module bundlers to make a production build. It does this because the advantages of Tree-shaking, a single output file and other features of module bundlers still hold up in the production phase: Tree-shaking results in a smaller output file; Not all modules are written with ESM; and the list goes on. Omdat volgende voorbeelden eigenlijk geen module bundlers zijn (want ze bundelen zelf niets), worden ze build tools genoemd. In het volgende hoofdstuk worden de twee populairste besproken.
 
 \subsubsection{Snowpack}
-\ldots
+
+Snowpack is het eerste voorbeeld van een unbundeld build tool. Het is momenteel de meest populaire in zijn categorie. Het pakt uit met de slogan ‘The faster build tool’. Of dat effectief waar is, zal in het volgend hoofdstuk besproken worden. Het grootste pluspunt van Parcel was dat die zijn doel probeert te bereiken met zo min mogelijk configuratie. Deze filosophie volgt Snowpack niet. Een configuratie bestand is vereist en kan al snel aanzienlijke grootte bereiken. 
+
+Zoals hierboven vermeldt, gebruikt een unbundled build tool vaak toch een module bundler in productie. Bij Snowpack is dit optioneel. Standaard is de productie build die Snowpack aanmaakt dus ook ongebundeld, iets waar enkel moderne browsers mee overweg kunnen. De configuratie kan wel aangepast worden om gebruik te maken van Webpack of Rollup, nog een andere module bundler, zodat dat laatste geen probleem meer vormt. Voor dit onderzoek voegen we zo’n module bundler niet toe aan Snowpack. Bij de volgende build tool die aan bod komt, Vite, is het geen optie om de module bundler in productie weg te laten. Snowpack zal dus de volledige ongebundelde werking representeren, terwijl Vite hetzelfde zal doen voor de half-ongebundelde werking.
+
 \subsubsection{Vite}
-\ldots
+Vite is de jongste build tool die in deze studie aan bod komt. Het combineert een ongebundelde development omgeving met een gebundelde in productie. Voor dit laatste gebruikt het Rollup \autocite{vite-no-date}, een alternatief aan Webpack. Hoewel het ook een configuratie bestand bevat, voelt die minder zwaar aan als bij Snowpack. 
+
+Zoals de naam Vite doet vermoeden, beweren de makers ervan bliksemsnelle opstarttijden in vergelijking met de competitie. 
+

@@ -19,6 +19,47 @@
 
 \refsection{0}
   \datalist[entry]{apa/global//global/global}
+    \entry{crutchfield-2018}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4ff266d661eaede9279c46ac58cee185}{%
+           family={Crutchfield},
+           familyi={C\bibinitperiod},
+           given={Constance},
+           giveni={C\bibinitperiod\bibinitdelim .\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{4ff266d661eaede9279c46ac58cee185}
+      \strng{fullhash}{4ff266d661eaede9279c46ac58cee185}
+      \strng{bibnamehash}{4ff266d661eaede9279c46ac58cee185}
+      \strng{authorbibnamehash}{4ff266d661eaede9279c46ac58cee185}
+      \strng{authornamehash}{4ff266d661eaede9279c46ac58cee185}
+      \strng{authorfullhash}{4ff266d661eaede9279c46ac58cee185}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{10}
+      \field{title}{CommonJS …what, why and how}
+      \field{urlday}{2}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@cgcrutch18/commonjs-what-why-and-how-64ed9f31aa46
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@cgcrutch18/commonjs-what-why-and-how-64ed9f31aa46
+      \endverb
+    \endentry
     \entry{facebook-2018}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d85544fce402c7a2a96a48078edaf203}{%
@@ -179,6 +220,151 @@
       \verb https://github.com/paulhoughton/mortgage
       \endverb
     \endentry
+    \entry{mozilla-2021B}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=502f1bd97b0e7d80b88e1f45ae1bfdb8}{%
+           family={{Mozilla}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {american}%
+      }
+      \strng{namehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{fullhash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{bibnamehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{authorbibnamehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{authornamehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{authorfullhash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{month}{12}
+      \field{title}{IIFE - MDN Web Docs Glossary}
+      \field{urlday}{2}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+      \endverb
+    \endentry
+    \entry{mozilla-2021A}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=502f1bd97b0e7d80b88e1f45ae1bfdb8}{%
+           family={{Mozilla}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {american}%
+      }
+      \strng{namehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{fullhash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{bibnamehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{authorbibnamehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{authornamehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{authorfullhash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{month}{10}
+      \field{title}{JavaScript modules}
+      \field{urlday}{2}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+      \endverb
+    \endentry
+    \entry{snowpack-no-date}{image}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d6c827ef62ef650b3e8d7cec4801249}{%
+           family={{Snowpack}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {dutch}%
+      }
+      \strng{namehash}{1d6c827ef62ef650b3e8d7cec4801249}
+      \strng{fullhash}{1d6c827ef62ef650b3e8d7cec4801249}
+      \strng{bibnamehash}{1d6c827ef62ef650b3e8d7cec4801249}
+      \strng{authorbibnamehash}{1d6c827ef62ef650b3e8d7cec4801249}
+      \strng{authornamehash}{1d6c827ef62ef650b3e8d7cec4801249}
+      \strng{authorfullhash}{1d6c827ef62ef650b3e8d7cec4801249}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Unbundled vs bundled development}
+      \verb{urlraw}
+      \verb https://www.snowpack.dev/concepts/how-snowpack-works#unbundled-development
+      \endverb
+      \verb{url}
+      \verb https://www.snowpack.dev/concepts/how-snowpack-works#unbundled-development
+      \endverb
+    \endentry
+    \entry{stateofjs-2020}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=41da6e6957c5746e43211a013322fe8d}{%
+           family={{StateofJS}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{41da6e6957c5746e43211a013322fe8d}
+      \strng{fullhash}{41da6e6957c5746e43211a013322fe8d}
+      \strng{bibnamehash}{41da6e6957c5746e43211a013322fe8d}
+      \strng{authorbibnamehash}{41da6e6957c5746e43211a013322fe8d}
+      \strng{authornamehash}{41da6e6957c5746e43211a013322fe8d}
+      \strng{authorfullhash}{41da6e6957c5746e43211a013322fe8d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{State of JS 2020: Build Tools}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://2020.stateofjs.com/en-us/technologies/build-tools/
+      \endverb
+      \verb{url}
+      \verb https://2020.stateofjs.com/en-us/technologies/build-tools/
+      \endverb
+    \endentry
     \entry{vansteenkiste-2021}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9a0b4bb17765dcec8c97ccb0153a42ac}{%
@@ -213,6 +399,138 @@
       \endverb
       \verb{url}
       \verb https://github.com/MaximVansteenkiste/bar-react
+      \endverb
+    \endentry
+    \entry{vite-no-date}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d9db1ebcf1c30ffc9485e981aec4f04}{%
+           family={{Vite}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {american}%
+      }
+      \strng{namehash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{fullhash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{bibnamehash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{authorbibnamehash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{authornamehash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{authorfullhash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Building for Production | Vite}
+      \field{urlday}{8}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://vitejs.dev/guide/build.html
+      \endverb
+      \verb{url}
+      \verb https://vitejs.dev/guide/build.html
+      \endverb
+    \endentry
+    \entry{webapck-no-date}{image}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=57deaa78947850275b74be73dc1e526e}{%
+           family={{Webapck}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {dutch}%
+      }
+      \strng{namehash}{57deaa78947850275b74be73dc1e526e}
+      \strng{fullhash}{57deaa78947850275b74be73dc1e526e}
+      \strng{bibnamehash}{57deaa78947850275b74be73dc1e526e}
+      \strng{authorbibnamehash}{57deaa78947850275b74be73dc1e526e}
+      \strng{authornamehash}{57deaa78947850275b74be73dc1e526e}
+      \strng{authorfullhash}{57deaa78947850275b74be73dc1e526e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Webpack overzicht module bundler}
+      \verb{urlraw}
+      \verb https://webpack.js.org
+      \endverb
+      \verb{url}
+      \verb https://webpack.js.org
+      \endverb
+    \endentry
+    \entry{webpack-no-dateB}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c64e0f7d4e01e48e693c9c5638b5e8f7}{%
+           family={{Webpack}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{fullhash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{bibnamehash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{authorbibnamehash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{authornamehash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{authorfullhash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradate}{1}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Modules history}
+      \field{urlday}{2}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://webpack.js.org/concepts/modules/
+      \endverb
+      \verb{url}
+      \verb https://webpack.js.org/concepts/modules/
+      \endverb
+    \endentry
+    \entry{webpack-no-dateA}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c64e0f7d4e01e48e693c9c5638b5e8f7}{%
+           family={{Webpack}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{fullhash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{bibnamehash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{authorbibnamehash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{authornamehash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \strng{authorfullhash}{c64e0f7d4e01e48e693c9c5638b5e8f7}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradate}{2}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Why Webpack?}
+      \field{urlday}{2}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://webpack.js.org/concepts/why-webpack/
+      \endverb
+      \verb{url}
+      \verb https://webpack.js.org/concepts/why-webpack/
       \endverb
     \endentry
   \enddatalist

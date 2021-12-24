@@ -33,15 +33,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Webpack}{21}{section*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{22}{section*.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Rollup}{22}{section*.10}%
+\contentsline {subsubsection}{Parcel}{21}{section*.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Unbundled development}{22}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Snowpack}{23}{section*.11}%
+\contentsline {subsubsection}{Snowpack}{23}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{23}{section*.12}%
+\contentsline {subsubsection}{Vite}{24}{section*.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodologie}{25}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -59,33 +57,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Mortage}{30}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{30}{section*.13}%
+\contentsline {subsubsection}{Parcel}{30}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Snowpack}{32}{section*.14}%
+\contentsline {subsubsection}{Snowpack}{32}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{32}{section*.15}%
+\contentsline {subsubsection}{Vite}{32}{section*.14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Todoist}{32}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{33}{section*.16}%
+\contentsline {subsubsection}{Parcel}{33}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Snowpack}{33}{section*.17}%
+\contentsline {subsubsection}{Snowpack}{33}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{33}{section*.18}%
+\contentsline {subsubsection}{Vite}{33}{section*.17}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.3}Bar}{34}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{34}{section*.19}%
+\contentsline {subsubsection}{Parcel}{34}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Snowpack}{34}{section*.20}%
+\contentsline {subsubsection}{Snowpack}{34}{section*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{37}{section*.21}%
+\contentsline {subsubsection}{Vite}{37}{section*.20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Conclusie}{39}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.0.1}Nieuw project}{39}{subsection.4.0.1}%
+\contentsline {section}{\numberline {4.1}Nieuw project}{39}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.0.2}Bestaand project}{40}{subsection.4.0.2}%
+\contentsline {section}{\numberline {4.2}Bestaand project}{40}{section.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{43}{appendix.A}%
 \defcounter {refsection}{0}\relax 
@@ -101,5 +99,5 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.6}References}{45}{section.A.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{47}{appendix*.22}%
+\contentsline {chapter}{Bibliografie}{47}{appendix*.21}%
 \contentsfinish 
