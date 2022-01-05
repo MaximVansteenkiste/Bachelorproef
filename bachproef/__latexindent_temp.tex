@@ -1,49 +1,177 @@
+%===============================================================================
+% LaTeX sjabloon voor de bachelorproef toegepaste informatica aan HOGENT
+% Meer info op https://github.com/HoGentTIN/bachproef-latex-sjabloon
+%===============================================================================
+
+\documentclass{bachproef-tin}
+
+\usepackage{hogent-thesis-titlepage} % Titelpagina conform aan HOGENT huisstijl
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[nonumberlist]{glossaries}
+
+\input{glossary}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+
+\lstdefinestyle{codeStyle}{  
+    belowcaptionskip=1\baselineskip,
+    breaklines=true,
+    frame=none,
+    numbers=none, 
+    basicstyle=\footnotesize\ttfamily,
+    keywordstyle=\bfseries\color{green!40!black},
+    commentstyle=\itshape\color{purple!40!black},
+    identifierstyle=\color{blue},
+    backgroundcolor=\color{gray!10!white},
+}
+
+\lstset{style=codeStyle}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, in, instanceof, new, null, return, switch, this, throw, true, try, typeof, var, void, while, with},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  sensitive=true
+}
+
+
+
+%%---------- Documenteigenschappen ---------------------------------------------
+% TODO: Vul dit aan met je eigen info:
+
+% De titel van het rapport/bachelorproef
+\title{Mag Webpack zich nog steeds de koning der module bundlers noemen?}
+
+% Je eigen naam
+\author{Maxim Vansteenkiste}
+
+% De naam van je promotor (lector van de opleiding)
+\promotor{Heidi Roobrouck}
+
+% De naam van je co-promotor. Als je promotor ook je opdrachtgever is en je
+% dus ook inhoudelijk begeleidt (en enkel dan!), mag je dit leeg laten.
+\copromotor{Cedric Vanhaeverbeke}
+
+% Indien je bachelorproef in opdracht van/in samenwerking met een bedrijf of
+% externe organisatie geschreven is, geef je hier de naam. Zoniet laat je dit
+% zoals het is.
+\instelling{---}
+
+% Academiejaar
+\academiejaar{2021-2022}
+
+% Examenperiode
+%  - 1e semester = 1e examenperiode => 1
+%  - 2e semester = 2e examenperiode => 2
+%  - tweede zit  = 3e examenperiode => 3
+\examenperiode{1}
+
+%===============================================================================
+% Inhoud document
+%===============================================================================
+
+\begin{document}
+
+%---------- Taalselectie -------------------------------------------------------
+% Als je je bachelorproef in het Engels schrijft, haal dan onderstaande regel
+% uit commentaar. Let op: de tekst op de voorkaft blijft in het Nederlands, en
+% dat is ook de bedoeling!
+
+% \selectlanguage{english}
+
+%---------- Titelblad ----------------------------------------------------------
+\inserttitlepage
+
+%---------- Samenvatting, voorwoord --------------------------------------------
+\usechapterimagefalse
+\input{voorwoord}
+\input{samenvatting}
+
+%---------- Inhoudstafel -------------------------------------------------------
+\pagestyle{empty} % Geen hoofding
+\tableofcontents  % Voeg de inhoudstafel toe
+\cleardoublepage  % Zorg dat volgende hoofstuk op een oneven pagina begint
+\pagestyle{fancy} % Zet hoofding opnieuw aan
+
+%---------- Lijst figuren, afkortingen, ... ------------------------------------
+
+% Indien gewenst kan je hier een lijst van figuren/tabellen opgeven. Geef in
+% dat geval je figuren/tabellen altijd een korte beschrijving:
+%
+%  \caption[korte beschrijving]{uitgebreide beschrijving}
+%
+% De korte beschrijving wordt gebruikt voor deze lijst, de uitgebreide staat bij
+% de figuur of tabel zelf.
+
+\listoffigures
+\listoftables
+
+% Als je een lijst van afkortingen of termen wil toevoegen, dan hoort die
+% hier thuis. Gebruik bijvoorbeeld de ``glossaries'' package.
+% https://www.overleaf.com/learn/latex/Glossaries
+
+\pagestyle{empty}
+\glsaddall
+\printglossary
+\pagestyle{fancy}
+
+%---------- Kern ---------------------------------------------------------------
+
+% De eerste hoofdstukken van een bachelorproef zijn meestal een inleiding op
+% het onderwerp, literatuurstudie en verantwoording methodologie.
+% Aarzel niet om een meer beschrijvende titel aan deze hoofstukken te geven of
+% om bijvoorbeeld de inleiding en/of stand van zaken over meerdere hoofdstukken
+% te verspreiden!
+
+\input{inleiding}
+\input{standvanzaken}
+\input{methodologie}
+
+% Voeg hier je eigen hoofdstukken toe die de ``corpus'' van je bachelorproef
+% vormen. De structuur en titels hangen af van je eigen onderzoek. Je kan bv.
+% elke fase in je onderzoek in een apart hoofdstuk bespreken.
+
+%\input{...}
+%\input{...}
+%...
+
+\input{conclusie}
+
 %%=============================================================================
-%% Conclusie
+%% Bijlagen
 %%=============================================================================
 
-\chapter{Conclusie}
-\label{ch:conclusie}
+\appendix
+\renewcommand{\chaptername}{Appendix}
 
-% TODO: Trek een duidelijke conclusie, in de vorm van een antwoord op de
-% onderzoeksvra(a)g(en). Wat was jouw bijdrage aan het onderzoeksdomein en
-% hoe biedt dit meerwaarde aan het vakgebied/doelgroep? 
-% Reflecteer kritisch over het resultaat. In Engelse teksten wordt deze sectie
-% ``Discussion'' genoemd. Had je deze uitkomst verwacht? Zijn er zaken die nog
-% niet duidelijk zijn?
-% Heeft het onderzoek geleid tot nieuwe vragen die uitnodigen tot verder 
-%onderzoek?
+%%---------- Onderzoeksvoorstel -----------------------------------------------
 
-In het vorig hoofdstuk werden de gekozen module bundlers op de proef gesteld aan de hand van drie open-source projecten en een van nul te beginnen. De verschillende stappen om ze werkende te krijgen werden overlopen, bij de een waren dat er al meer dan de ander. In dit hoofdstuk wordt gekeken naar de gemeten en waargenomen resultaten, objectief en subjectief, om tot een conclusie te komen.
+\chapter{Onderzoeksvoorstel}
 
-\section{Nieuw project}
+Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat vooraf werd beoordeeld door de promotor. Dat voorstel is opgenomen in deze bijlage.
 
-Al de module bundlers hebben niet gezweet bij het opzetten van een nieuw project, wat maar normaal is. Voor Webpack is er gebruik gemaakt van een framework, CRA, omdat het configuratie werk anders te veel zou zijn. Ookal is het een nieuw project en dus relatief klein, toch kunnen we al verschillen waarnemen tussen de vier kandidaten. 
+% Verwijzing naar het bestand met de inhoud van het onderzoeksvoorstel
+\input{../voorstel/voorstel-inhoud}
 
-Op onderstaande figuur zien we al een trend verschijnen die doorheen deze conclusie zal gelden: Webpack is aanzienlijk trager dan de competitie, ondanks dat Snowpack niet bundelt, is het toch even traag of trager dan Parcel. Die laatste zijn Rust compiler, zie literatuurstudie, zal zijn vruchten afwerpen. De drie balkjes die ontbreken bij Vite en het ene bij Parcel zijn geen fout: ze waren gewoon sneller dan een volledige seconde. 
+%%---------- Andere bijlagen --------------------------------------------------
+% TODO: Voeg hier eventuele andere bijlagen toe
+%\input{...}
 
-\begin{figure}[h]
-    \includegraphics[scale=0.6]{conslusieNieuwDev}
-        \centering
-        \includegraphics[scale=0.6]{conclusieNieuwUitvoer}
-        \centering
-        \caption{Resulaten nieuw project}
-    \end{figure}
+%%---------- Referentielijst --------------------------------------------------
 
+\printbibliography[heading=bibintoc]
 
-De developer experience was voor al de build tools zo goed als hetzelfde bij het opzetten van dit nieuw project. De conclusie kunnen we daarop dus niet baseren. Maar de data hierboven is duidelijk genoeg: bij het opzetten van een project is Vite de beste optie. Het gebruikt het beste van beide werelden: ongebundelde code in development en gebundelde code in productie. De andere opties hebben niet direct een afknapper, maar de snelheid van Vite valt niet te negeren.
-
-\section{Bestaand project}
-Een bestaand project omvormen is het heel andere koek gepaard met andere overwegingen. In de methodologie is getracht projecten te kiezen met zoveel mogelijk uiteenlopende technologieën. Natuurlijk is lang niet alles aan bod gekomen. Een project kan bestaan uit talloze combinaties van verschillende, soms niche technologieën, packages of zelf geschreven bibliotheken. Wat in dit onderzoek geconcludeerd zal worden, is een overweging gebaseerd op de projecten die hier aan bod gekomen zijn. Het kan zijn dat voor een ander project, die keuze minder gemakkelijk of zelfs uitgesloten is door welke factor dan ook. Dat terzijde, de conclusie zal in het algemeen voor de meesten gelden aangezien veel voorkomende use-cases aan bod kwamen. Onderstaande resultaten zouden hoogstwaarschijnlijk nog kunnen bijgeschaafd worden door van elke build tool de configuratie te optimaliseren per project. Dit echter is niet het punt van deze studie. Welke build tool is in het algemeen de beste keuze, zonder uren de configuratie bij te schaven?
-
-Op onderstaande figuur is te zien dat elke geteste build tool het beter doet dan Webpack en het verschil is vaak niet klein. Hoewel Snowpack ook aanzienlijk sneller maar aangezien uit de methodologie is gebleken dat de developer experience ver van optimaal is, zeker in vergelijking met de andere opties, kijk je beter elders bij het kiezen van een nieuwe build tool. Parcel en Vite daarentegen doen het heel goed op vlak van developer experience en snelheid. Parcel levert gebundelde code af, ook in development. Dit kan een voor- of nadeel zijn, afhangend hoe het bekeken wordt. Uit het vorig hoofdstuk blijkt dat Vite geen CommonJS ondersteunt, Parcel wel. Hoewel Parcel in sommige scenario’s net iets sneller weet te zijn dan Vite, wint die laatste toch in de meeste gevallen. Merk op dat ook bij de tweede grafiek, het balkje bij Vite ontbreekt. Dit is weer geen fout: Vite slaagt erin om zijn development server gemiddeld in sneller dan een seconde op te starten. Dat is indrukwekkend, zeker als dit naast de resultaten van de competitie gelegd wordt. 
-
-\begin{figure}[h]
-    \includegraphics[scale=0.6]{conclusieBestaandDev}
-        \centering
-        \includegraphics[scale=0.6]{conclusieBestaandUitvoer}
-        \centering
-        \caption{Resulaten bestaand project}
-    \end{figure}
-
-    De opzet van deze proef, of Webpack nog steeds mag gezien worden als de koning der module bundlers, kan dus beantwoord worden met een duidelijke ‘nee’. Zelf binnen zijn eigen categorie van gebundelde code, blijkt Parcel, in de meeste gevallen, een betere optie te zijn. 
+\end{document}
