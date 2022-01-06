@@ -1,177 +1,22 @@
-%===============================================================================
-% LaTeX sjabloon voor de bachelorproef toegepaste informatica aan HOGENT
-% Meer info op https://github.com/HoGentTIN/bachproef-latex-sjabloon
-%===============================================================================
 
-\documentclass{bachproef-tin}
 
-\usepackage{hogent-thesis-titlepage} % Titelpagina conform aan HOGENT huisstijl
-\usepackage{listings}
-\usepackage{xcolor}
-\usepackage{booktabs}
-\usepackage[utf8]{inputenc}
-\usepackage[nonumberlist]{glossaries}
+\makeglossaries
 
-\input{glossary}
-
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-
-\lstdefinestyle{codeStyle}{  
-    belowcaptionskip=1\baselineskip,
-    breaklines=true,
-    frame=none,
-    numbers=none, 
-    basicstyle=\footnotesize\ttfamily,
-    keywordstyle=\bfseries\color{green!40!black},
-    commentstyle=\itshape\color{purple!40!black},
-    identifierstyle=\color{blue},
-    backgroundcolor=\color{gray!10!white},
+\newglossaryentry{HTML}
+{
+    name=HTML,
+    description={Hyper Text Markup Language is een opmaaktaal voor de specificatie van documenten, voornamelijk bedoeld voor het web.}
 }
 
-\lstset{style=codeStyle}
-
-\lstdefinelanguage{JavaScript}{
-  keywords={break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, in, instanceof, new, null, return, switch, this, throw, true, try, typeof, var, void, while, with},
-  morecomment=[l]{//},
-  morecomment=[s]{/*}{*/},
-  morestring=[b]',
-  morestring=[b]",
-  ndkeywords={class, export, boolean, throw, implements, import, this},
-  keywordstyle=\color{blue}\bfseries,
-  ndkeywordstyle=\color{darkgray}\bfseries,
-  identifierstyle=\color{black},
-  commentstyle=\color{purple}\ttfamily,
-  stringstyle=\color{red}\ttfamily,
-  sensitive=true
+\newglossaryentry{CSS}
+{
+    name=CSS,
+    description={Cascading Style Sheets bieden een mogelijkheid om de vormgeving van webpagina's los te koppelen van hun feitelijke inhoud}
 }
 
+\newglossaryentry{Javascript}
+{
+    name=Javascript,
+    description={Een veelgebruikte scripttaal om webpagina's interactief te maken en webapplicaties te ontwikkelen}
+}
 
-
-%%---------- Documenteigenschappen ---------------------------------------------
-% TODO: Vul dit aan met je eigen info:
-
-% De titel van het rapport/bachelorproef
-\title{Mag Webpack zich nog steeds de koning der module bundlers noemen?}
-
-% Je eigen naam
-\author{Maxim Vansteenkiste}
-
-% De naam van je promotor (lector van de opleiding)
-\promotor{Heidi Roobrouck}
-
-% De naam van je co-promotor. Als je promotor ook je opdrachtgever is en je
-% dus ook inhoudelijk begeleidt (en enkel dan!), mag je dit leeg laten.
-\copromotor{Cedric Vanhaeverbeke}
-
-% Indien je bachelorproef in opdracht van/in samenwerking met een bedrijf of
-% externe organisatie geschreven is, geef je hier de naam. Zoniet laat je dit
-% zoals het is.
-\instelling{---}
-
-% Academiejaar
-\academiejaar{2021-2022}
-
-% Examenperiode
-%  - 1e semester = 1e examenperiode => 1
-%  - 2e semester = 2e examenperiode => 2
-%  - tweede zit  = 3e examenperiode => 3
-\examenperiode{1}
-
-%===============================================================================
-% Inhoud document
-%===============================================================================
-
-\begin{document}
-
-%---------- Taalselectie -------------------------------------------------------
-% Als je je bachelorproef in het Engels schrijft, haal dan onderstaande regel
-% uit commentaar. Let op: de tekst op de voorkaft blijft in het Nederlands, en
-% dat is ook de bedoeling!
-
-% \selectlanguage{english}
-
-%---------- Titelblad ----------------------------------------------------------
-\inserttitlepage
-
-%---------- Samenvatting, voorwoord --------------------------------------------
-\usechapterimagefalse
-\input{voorwoord}
-\input{samenvatting}
-
-%---------- Inhoudstafel -------------------------------------------------------
-\pagestyle{empty} % Geen hoofding
-\tableofcontents  % Voeg de inhoudstafel toe
-\cleardoublepage  % Zorg dat volgende hoofstuk op een oneven pagina begint
-\pagestyle{fancy} % Zet hoofding opnieuw aan
-
-%---------- Lijst figuren, afkortingen, ... ------------------------------------
-
-% Indien gewenst kan je hier een lijst van figuren/tabellen opgeven. Geef in
-% dat geval je figuren/tabellen altijd een korte beschrijving:
-%
-%  \caption[korte beschrijving]{uitgebreide beschrijving}
-%
-% De korte beschrijving wordt gebruikt voor deze lijst, de uitgebreide staat bij
-% de figuur of tabel zelf.
-
-\listoffigures
-\listoftables
-
-% Als je een lijst van afkortingen of termen wil toevoegen, dan hoort die
-% hier thuis. Gebruik bijvoorbeeld de ``glossaries'' package.
-% https://www.overleaf.com/learn/latex/Glossaries
-
-\pagestyle{empty}
-\glsaddall
-\printglossary
-\pagestyle{fancy}
-
-%---------- Kern ---------------------------------------------------------------
-
-% De eerste hoofdstukken van een bachelorproef zijn meestal een inleiding op
-% het onderwerp, literatuurstudie en verantwoording methodologie.
-% Aarzel niet om een meer beschrijvende titel aan deze hoofstukken te geven of
-% om bijvoorbeeld de inleiding en/of stand van zaken over meerdere hoofdstukken
-% te verspreiden!
-
-\input{inleiding}
-\input{standvanzaken}
-\input{methodologie}
-
-% Voeg hier je eigen hoofdstukken toe die de ``corpus'' van je bachelorproef
-% vormen. De structuur en titels hangen af van je eigen onderzoek. Je kan bv.
-% elke fase in je onderzoek in een apart hoofdstuk bespreken.
-
-%\input{...}
-%\input{...}
-%...
-
-\input{conclusie}
-
-%%=============================================================================
-%% Bijlagen
-%%=============================================================================
-
-\appendix
-\renewcommand{\chaptername}{Appendix}
-
-%%---------- Onderzoeksvoorstel -----------------------------------------------
-
-\chapter{Onderzoeksvoorstel}
-
-Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat vooraf werd beoordeeld door de promotor. Dat voorstel is opgenomen in deze bijlage.
-
-% Verwijzing naar het bestand met de inhoud van het onderzoeksvoorstel
-\input{../voorstel/voorstel-inhoud}
-
-%%---------- Andere bijlagen --------------------------------------------------
-% TODO: Voeg hier eventuele andere bijlagen toe
-%\input{...}
-
-%%---------- Referentielijst --------------------------------------------------
-
-\printbibliography[heading=bibintoc]
-
-\end{document}
