@@ -1,0 +1,18 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'bachproef-tin.blg'
+[54] biber-darwin:340> INFO - === Tue Jan 11, 2022, 18:11:16
+[66] Biber.pm:415> INFO - Reading 'bachproef-tin.bcf'
+[153] Biber.pm:952> INFO - Found 20 citekeys in bib section 0
+[171] Biber.pm:4340> INFO - Processing section 0
+[183] Biber.pm:4531> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
+[184] bibtex.pm:1689> INFO - LaTeX decoding ...
+[199] bibtex.pm:1494> INFO - Found BibTeX data source 'bachproef-tin.bib'
+[200] Utils.pm:395> WARN - Duplicate entry key: 'npm-no-date' in file 'bachproef-tin.bib', skipping ...
+[200] Utils.pm:395> WARN - Duplicate entry key: 'vansteenkiste-2021' in file 'bachproef-tin.bib', skipping ...
+[281] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[281] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[281] Biber.pm:4168> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
+[281] Biber.pm:4174> INFO - No sort tailoring available for locale 'nl-NL'
+[296] bbl.pm:654> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
+[302] bbl.pm:757> INFO - Output to bachproef-tin.bbl
+[302] Biber.pm:128> INFO - WARNINGS: 2

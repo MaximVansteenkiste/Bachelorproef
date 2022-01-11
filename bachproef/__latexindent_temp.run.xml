@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>bachproef-tin.bcf</file>
+      <file>__latexindent_temp.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>bachproef-tin.bbl</file>
+      <file>__latexindent_temp.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -66,23 +66,23 @@
       <file>english-apa.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>bachproef-tin</infile>
+      <infile>__latexindent_temp</infile>
     </cmdline>
     <input>
-      <file>bachproef-tin.bcf</file>
+      <file>__latexindent_temp.bcf</file>
     </input>
     <output>
-      <file>bachproef-tin.bbl</file>
+      <file>__latexindent_temp.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>bachproef-tin.bbl</file>
+      <file>__latexindent_temp.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>bachproef-tin.bcf</file>
+      <file>__latexindent_temp.bcf</file>
     </requires>
     <requires type="editable">
       <file>bachproef-tin.bib</file>

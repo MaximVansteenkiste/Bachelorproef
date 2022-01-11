@@ -4,4 +4,4 @@
   // ...
 })();
 
-// firstVariable and secondVariable will be discarded after the function is executed.
+// firstVariable en secondVariable zullen weggegooid worden nadat de functie is uitgevoerd

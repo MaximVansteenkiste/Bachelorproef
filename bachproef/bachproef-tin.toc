@@ -1,101 +1,101 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {dutch}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Inleiding}{13}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Inleiding}{15}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Probleemstelling}{13}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Probleemstelling}{15}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Onderzoeksvraag}{13}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Onderzoeksvraag}{15}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Onderzoeksdoelstelling}{14}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Onderzoeksdoelstelling}{16}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Opzet van deze bachelorproef}{14}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Opzet van deze bachelorproef}{16}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}State of the art}{15}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Stand van zaken}{17}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Geschiedenis}{16}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Geschiedenis}{18}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Script tags}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Script tags}{18}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Immediately invoked function expressions}{16}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}Immediately invoked function expressions}{18}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}CommonJS}{17}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}CommonJS}{19}{subsection.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}ECMAScript Modules}{18}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.4}ECMAScript Modules}{20}{subsection.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Module bundlers}{18}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Module bundlers}{20}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Tree shaking}{19}{section*.6}%
+\contentsline {subsubsection}{Tree shaking}{21}{section*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Code splitting}{19}{section*.7}%
+\contentsline {subsubsection}{Code splitting}{21}{section*.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Ongebundelde build tools}{19}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Ongebundelde build tools}{21}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Keuze build tools}{20}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Keuze build tools}{22}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Webpack}{21}{section*.8}%
+\contentsline {subsubsection}{Webpack}{23}{section*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{22}{section*.9}%
+\contentsline {subsubsection}{Parcel}{23}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Snowpack}{22}{section*.10}%
+\contentsline {subsubsection}{Snowpack}{24}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{22}{section*.11}%
+\contentsline {subsubsection}{Vite}{25}{section*.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodologie}{23}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Nieuw project}{27}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Nieuw project}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Webpack}{28}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Webpack}{24}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Parcel}{29}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Parcel}{25}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.3}Snowpack}{30}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Snowpack}{26}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.4}Vite}{31}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Vite}{27}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.5}Conclusie}{31}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Bestaand project}{27}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Bestaand project}{33}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Mortage}{28}{subsection.3.2.1}%
+\contentsline {section}{\numberline {4.1}Mortage}{33}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{28}{section*.12}%
+\contentsline {subsection}{\numberline {4.1.1}Parcel}{34}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Snowpack}{30}{section*.13}%
+\contentsline {subsection}{\numberline {4.1.2}Snowpack}{35}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{30}{section*.14}%
+\contentsline {subsubsection}{Vite}{36}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Todoist}{30}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {4.1.3}Todoist}{36}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{31}{section*.15}%
+\contentsline {subsubsection}{Parcel}{36}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Snowpack}{31}{section*.16}%
+\contentsline {subsubsection}{Snowpack}{37}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{31}{section*.17}%
+\contentsline {subsubsection}{Vite}{37}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Bar}{32}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {4.1.4}Bar}{37}{subsection.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parcel}{32}{section*.18}%
+\contentsline {subsubsection}{Parcel}{38}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Snowpack}{32}{section*.19}%
+\contentsline {subsubsection}{Snowpack}{38}{section*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vite}{35}{section*.20}%
+\contentsline {subsubsection}{Vite}{40}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.2}Conclusie}{41}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Nieuw project}{37}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Conclusie}{43}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Bestaand project}{38}{section.4.2}%
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{45}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{41}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Introduction}{45}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introduction}{41}{section.A.1}%
+\contentsline {section}{\numberline {A.2}State-of-the-art}{46}{section.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{42}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Methodology}{46}{section.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodology}{42}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Anticipated results}{46}{section.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Anticipated results}{42}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Anticipated conclusions}{46}{section.A.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Anticipated conclusions}{42}{section.A.5}%
+\contentsline {section}{\numberline {A.6}References}{47}{section.A.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}References}{43}{section.A.6}%
+\contentsline {chapter}{Bibliografie}{49}{appendix*.19}%
 \contentsfinish 

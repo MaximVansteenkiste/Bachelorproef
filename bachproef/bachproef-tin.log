@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.24)  10 JAN 2022 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.24)  11 JAN 2022 18:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1322,12 +1322,10 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 \openout4 = `bachproef-tin.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'bachproef-tin.bbl' not found.
-
-No file bachproef-tin.bbl.
+Package biblatex Info: ... file 'bachproef-tin.bbl' found.
+ (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.bbl)
 Package biblatex Info: Reference section=0 on input line 86.
 Package biblatex Info: Reference segment=0 on input line 86.
-(/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.glsdefs)
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1435,85 +1433,63 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
 
 ]) [5] [6
 
-]
+] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.toc
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \vbox (badness 3375) has occurred while \output is active []
+
+ [8])
 \tf@toc=\write8
 \openout8 = `bachproef-tin.toc'.
 
- [7] [8
+ [9] [10
 
-]
+] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.lof)
 \tf@lof=\write9
 \openout9 = `bachproef-tin.lof'.
 
- [9
+ [11
 
-] [10
+] [12
 
-]
+] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.lot)
 \tf@lot=\write10
 \openout10 = `bachproef-tin.lot'.
 
 
 No file bachproef-tin.gls.
-(/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/inleiding.tex [11] [12
+(/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/inleiding.tex [13] [14
 
 ]
 Hoofdstuk 1.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 8.
 
 Underfull \vbox (badness 1097) has occurred while \output is active []
 
- [13]
+ [15]
 
-LaTeX Warning: Reference `ch:stand-van-zaken' on page 14 undefined on input line 34.
+LaTeX Warning: Reference `ch:methodologie' on page 16 undefined on input line 36.
 
-
-LaTeX Warning: Reference `ch:methodologie' on page 14 undefined on input line 36.
-
-
-LaTeX Warning: Reference `ch:conclusie' on page 14 undefined on input line 40.
-
-) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/standvanzaken.tex
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 1.
- [14]
+) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/standvanzaken.tex [16]
 Hoofdstuk 2.
-
-LaTeX Warning: Citation 'NPM' on page 15 undefined on input line 6.
-
-
-/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/standvanzaken.tex:8: Package glossaries Error: Glossary entry `package' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...als we een \gls{open-source} \gls{package} 
-                                                  willen installeren en gebr...
-You need to define a glossary entry before you can use it.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15
+ [17
 
-]
-
-LaTeX Warning: Citation 'webpack-no-dateB' on page 16 undefined on input line 13.
-
-
-LaTeX Warning: Citation 'mozilla-2021A' on page 16 undefined on input line 13.
-
-
-LaTeX Warning: Citation 'webpack-no-dateA' on page 16 undefined on input line 15.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+] (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 21.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 22.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1524,101 +1500,66 @@ Package microtype Info: Loading generic protrusion settings for font family
  (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/scriptTags.html
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
-)
-
-LaTeX Warning: Citation 'mozilla-2021B' on page 16 undefined on input line 25.
-
-[16] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/IIFE.js)
-
-LaTeX Warning: Citation 'crutchfield-2018' on page 17 undefined on input line 31.
-
-(/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/commonJSExport.js) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/commonJSImport.js)
+) [18] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/IIFE.js) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/commonJSExport.js) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/commonJSImport.js)
 Underfull \vbox (badness 1895) has occurred while \output is active []
 
- [17] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/esmExport.js) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/esmImport.js) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/unbundled.js) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/bundled.js)
+ [19] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/esmExport.js) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/esmImport.js) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/unbundled.js) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/bundled.js)
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 62.
- [18]
-
-LaTeX Warning: Citation 'stateofjs-2020' on page 19 undefined on input line 71.
-
-<img//Bundledvsunbundled.png, id=191, 909.3975pt x 515.9275pt>
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 63.
+ [20]
+<img//Bundledvsunbundled.png, id=375, 909.3975pt x 515.9275pt>
 File: img//Bundledvsunbundled.png Graphic file (type png)
 <use img//Bundledvsunbundled.png>
-Package pdftex.def Info: img//Bundledvsunbundled.png  used on input line 77.
+Package pdftex.def Info: img//Bundledvsunbundled.png  used on input line 75.
 (pdftex.def)             Requested size: 454.69765pt x 257.96312pt.
 
-Overfull \hbox (27.9063pt too wide) in paragraph at lines 77--78
+Overfull \hbox (27.9063pt too wide) in paragraph at lines 75--76
 [][] 
  []
-
-
-LaTeX Warning: Citation 'snowpack-no-date' on page 19 undefined on input line 78.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19] [20 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Bundledvsunbundled.png>]
-
-/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/standvanzaken.tex:93: Package glossaries Error: Glossary entry `web frameworks' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 ...ïnstalleerd in veel \gls{web frameworks} 
-                                                  zoals create-react-app en ...
-You need to define a glossary entry before you can use it.
-
-<img//Webpack.jpg, id=206, 499.1448pt x 232.2276pt>
+[21]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 88.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [22 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Bundledvsunbundled.png>]
+<img//Webpack.jpg, id=396, 499.1448pt x 232.2276pt>
 File: img//Webpack.jpg Graphic file (type jpg)
 <use img//Webpack.jpg>
-Package pdftex.def Info: img//Webpack.jpg  used on input line 100.
+Package pdftex.def Info: img//Webpack.jpg  used on input line 130.
 (pdftex.def)             Requested size: 449.22617pt x 209.0029pt.
 
-Overfull \hbox (22.43481pt too wide) in paragraph at lines 100--101
+Overfull \hbox (22.43481pt too wide) in paragraph at lines 130--131
 [][] 
  []
 
 
-LaTeX Warning: Citation 'webpack-no-date' on page 21 undefined on input line 101.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 5119) has occurred while \output is active []
-
- [21 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Webpack.jpg>]
-
-LaTeX Warning: Citation 'vite-no-date' on page 22 undefined on input line 117.
-
-) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/methodologie.tex [22]
-Hoofdstuk 3.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 15.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
+[23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23
+ [24 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Webpack.jpg>]) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/methodologie.tex [25] [26
 
-] (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+]
+Hoofdstuk 3.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27] (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/craCreate.txt)
-<img//fileStructureInitCRA.png, id=226, 175.15437pt x 175.15437pt>
+<img//fileStructureInitCRA.png, id=432, 175.15437pt x 175.15437pt>
 File: img//fileStructureInitCRA.png Graphic file (type png)
 <use img//fileStructureInitCRA.png>
-Package pdftex.def Info: img//fileStructureInitCRA.png  used on input line 30.
+Package pdftex.def Info: img//fileStructureInitCRA.png  used on input line 23.
 (pdftex.def)             Requested size: 175.15395pt x 175.15395pt.
- (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/importCSS.js)
-
-LaTeX Warning: Citation 'facebook-2018' on page 24 undefined on input line 41.
-
-
-LaTeX Warning: Citation 'facebook-2021' on page 24 undefined on input line 42.
-
-[24 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//fileStructureInitCRA.png>] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/craStart.txt)
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 50.
+ (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/importCSS.js) [28 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//fileStructureInitCRA.png>] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/craStart.txt)
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 43.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1626,15 +1567,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 50.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 43.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 50.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 43.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 50.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 43.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
@@ -1642,151 +1583,140 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 50.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 43.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
-<img//parcelNew.png, id=242, 182.6825pt x 141.52875pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
+<img//parcelNew.png, id=448, 182.6825pt x 141.52875pt>
 File: img//parcelNew.png Graphic file (type png)
 <use img//parcelNew.png>
-Package pdftex.def Info: img//parcelNew.png  used on input line 72.
+Package pdftex.def Info: img//parcelNew.png  used on input line 65.
 (pdftex.def)             Requested size: 182.68204pt x 141.5284pt.
+ [29 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//parcelNew.png>] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/snowpackNew.txt)
+<img//snowpackNew.png, id=457, 182.6825pt x 245.91875pt>
+File: img//snowpackNew.png Graphic file (type png)
+<use img//snowpackNew.png>
+Package pdftex.def Info: img//snowpackNew.png  used on input line 79.
+(pdftex.def)             Requested size: 182.68204pt x 245.91814pt.
+ [30 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//snowpackNew.png>] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/viteNew.txt)
+<img//viteNew.png, id=466, 182.6825pt x 134.5025pt>
+File: img//viteNew.png Graphic file (type png)
+<use img//viteNew.png>
+Package pdftex.def Info: img//viteNew.png  used on input line 94.
+(pdftex.def)             Requested size: 182.68204pt x 134.50215pt.
+<img//conslusieNieuwDev.png, id=467, 543.02875pt x 337.26pt>
+File: img//conslusieNieuwDev.png Graphic file (type png)
+<use img//conslusieNieuwDev.png>
+Package pdftex.def Info: img//conslusieNieuwDev.png  used on input line 108.
+(pdftex.def)             Requested size: 325.81975pt x 202.35756pt.
+<img//conclusieNieuwUitvoer.png, id=468, 543.02875pt x 337.26pt>
+File: img//conclusieNieuwUitvoer.png Graphic file (type png)
+<use img//conclusieNieuwUitvoer.png>
+Package pdftex.def Info: img//conclusieNieuwUitvoer.png  used on input line 110.
+(pdftex.def)             Requested size: 325.81975pt x 202.35756pt.
+ [31 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//viteNew.png>] [32 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//conslusieNieuwDev.png> </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//conclusieNieuwUitvoer.png>]
+Hoofdstuk 4.
+<img//Mortage_languages.png, id=483, 325.215pt x 103.38625pt>
+File: img//Mortage_languages.png Graphic file (type png)
+<use img//Mortage_languages.png>
+Package pdftex.def Info: img//Mortage_languages.png  used on input line 133.
+(pdftex.def)             Requested size: 325.2142pt x 103.38599pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33
+
+] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/packageMortage.json) [34 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Mortage_languages.png>] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/scriptsParcelMortage.json) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/mortageIndex.html) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/mortageIndexScript.html) [35]
+<img//Todoist_languages.png, id=562, 325.215pt x 103.38625pt>
+File: img//Todoist_languages.png Graphic file (type png)
+<use img//Todoist_languages.png>
+Package pdftex.def Info: img//Todoist_languages.png  used on input line 173.
+(pdftex.def)             Requested size: 325.2142pt x 103.38599pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 4084) has occurred while \output is active []
-
- [25] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/snowpackNew.txt)
-<img//snowpackNew.png, id=251, 182.6825pt x 245.91875pt>
-File: img//snowpackNew.png Graphic file (type png)
-<use img//snowpackNew.png>
-Package pdftex.def Info: img//snowpackNew.png  used on input line 86.
-(pdftex.def)             Requested size: 182.68204pt x 245.91814pt.
- [26 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//parcelNew.png> </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//snowpackNew.png>] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/viteNew.txt)
-<img//viteNew.png, id=264, 182.6825pt x 134.5025pt>
-File: img//viteNew.png Graphic file (type png)
-<use img//viteNew.png>
-Package pdftex.def Info: img//viteNew.png  used on input line 101.
-(pdftex.def)             Requested size: 182.68204pt x 134.50215pt.
-
-
-LaTeX Warning: Citation 'houghton-2019' on page 27 undefined on input line 112.
-
-[27 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//viteNew.png>]
-<img//Mortage_languages.png, id=275, 325.215pt x 103.38625pt>
-File: img//Mortage_languages.png Graphic file (type png)
-<use img//Mortage_languages.png>
-Package pdftex.def Info: img//Mortage_languages.png  used on input line 120.
-(pdftex.def)             Requested size: 325.2142pt x 103.38599pt.
- (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/packageMortage.json [28 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Mortage_languages.png>]) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/scriptsParcelMortage.json) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/mortageIndex.html) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/mortageIndexScript.html [29])
-
-LaTeX Warning: Citation 'hadwen-2021' on page 30 undefined on input line 157.
-
-[30]
-<img//Todoist_languages.png, id=358, 325.215pt x 103.38625pt>
-File: img//Todoist_languages.png Graphic file (type png)
-<use img//Todoist_languages.png>
-Package pdftex.def Info: img//Todoist_languages.png  used on input line 160.
-(pdftex.def)             Requested size: 325.2142pt x 103.38599pt.
-
-
-LaTeX Warning: Citation 'vansteenkiste-2021' on page 31 undefined on input line 178.
-
-
-Underfull \vbox (badness 2035) has occurred while \output is active []
-
- [31 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Todoist_languages.png>]
-<img//Barapp_languages.png, id=368, 325.215pt x 103.38625pt>
+[36]
+<img//Barapp_languages.png, id=571, 325.215pt x 103.38625pt>
 File: img//Barapp_languages.png Graphic file (type png)
 <use img//Barapp_languages.png>
-Package pdftex.def Info: img//Barapp_languages.png  used on input line 181.
+Package pdftex.def Info: img//Barapp_languages.png  used on input line 194.
 (pdftex.def)             Requested size: 325.2142pt x 103.38599pt.
- [32 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Barapp_languages.png>]
-<img//bundledVSUnbundledFiles.jpg, id=378, 501.875pt x 241.90375pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Todoist_languages.png>]
+<img//bundledVSUnbundledFiles.jpg, id=581, 501.875pt x 241.90375pt>
 File: img//bundledVSUnbundledFiles.jpg Graphic file (type jpg)
 <use img//bundledVSUnbundledFiles.jpg>
-Package pdftex.def Info: img//bundledVSUnbundledFiles.jpg  used on input line 202.
+Package pdftex.def Info: img//bundledVSUnbundledFiles.jpg  used on input line 215.
 (pdftex.def)             Requested size: 501.87376pt x 241.90315pt.
 
-Overfull \hbox (75.08241pt too wide) in paragraph at lines 202--204
+Overfull \hbox (75.08241pt too wide) in paragraph at lines 215--217
  [][] 
  []
 
-(/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/indexBar.js [33 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//bundledVSUnbundledFiles.jpg>]) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/importReact.js) [34]) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/conclusie.tex [35] [36
-
-]
-Hoofdstuk 4.
-<img//conslusieNieuwDev.png, id=437, 543.02875pt x 337.26pt>
-File: img//conslusieNieuwDev.png Graphic file (type png)
-<use img//conslusieNieuwDev.png>
-Package pdftex.def Info: img//conslusieNieuwDev.png  used on input line 26.
-(pdftex.def)             Requested size: 325.81975pt x 202.35756pt.
-<img//conclusieNieuwUitvoer.png, id=438, 543.02875pt x 337.26pt>
-File: img//conclusieNieuwUitvoer.png Graphic file (type png)
-<use img//conclusieNieuwUitvoer.png>
-Package pdftex.def Info: img//conclusieNieuwUitvoer.png  used on input line 28.
-(pdftex.def)             Requested size: 325.81975pt x 202.35756pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//conslusieNieuwDev.png> </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//conclusieNieuwUitvoer.png>]
-<img//conclusieBestaandDev.png, id=454, 543.02875pt x 337.26pt>
+Underfull \vbox (badness 1661) has occurred while \output is active []
+
+ [38 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//Barapp_languages.png>] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/indexBar.js
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [39 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//bundledVSUnbundledFiles.jpg>]) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/codeSnippets/importReact.js) [40]
+<img//conclusieBestaandDev.png, id=635, 543.02875pt x 337.26pt>
 File: img//conclusieBestaandDev.png Graphic file (type png)
 <use img//conclusieBestaandDev.png>
-Package pdftex.def Info: img//conclusieBestaandDev.png  used on input line 42.
+Package pdftex.def Info: img//conclusieBestaandDev.png  used on input line 243.
 (pdftex.def)             Requested size: 325.81975pt x 202.35756pt.
-<img//conclusieBestaandUitvoer.png, id=455, 543.02875pt x 337.26pt>
+<img//conclusieBestaandUitvoer.png, id=636, 543.02875pt x 337.26pt>
 File: img//conclusieBestaandUitvoer.png Graphic file (type png)
 <use img//conclusieBestaandUitvoer.png>
-Package pdftex.def Info: img//conclusieBestaandUitvoer.png  used on input line 44.
+Package pdftex.def Info: img//conclusieBestaandUitvoer.png  used on input line 245.
 (pdftex.def)             Requested size: 325.81975pt x 202.35756pt.
-) [39 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//conclusieBestaandDev.png> </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//conclusieBestaandUitvoer.png>] [40]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/conclusie.tex [41] [42 </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//conclusieBestaandDev.png> </Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/img//conclusieBestaandUitvoer.png>]
+Hoofdstuk 5.
+) [43
+
+] [44
+
+]
 B\babelshorthand{"y}lage A.
 (../voorstel/voorstel-inhoud.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41
+ [45] [46]) [47] [48
 
-] [42])
-
-LaTeX Warning: Empty bibliography on input line 175.
-
-[43] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.aux)
+] [49] [50] (/Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                bachproef-tin
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42387 strings out of 478994
- 774571 string characters out of 5858183
- 1876036 words of memory out of 5000000
- 58530 multiletter control sequences out of 15000+600000
- 460286 words of font info for 217 fonts, out of 8000000 for 9000
+ 42556 strings out of 478994
+ 778829 string characters out of 5858183
+ 1868770 words of memory out of 5000000
+ 58622 multiletter control sequences out of 15000+600000
+ 470055 words of font info for 246 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,12n,107p,1171b,4887s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:latex} has been referenced but does not exist, replaced by a fixed one
+ 102i,12n,107p,1172b,4887s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:web\040frameworks} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:SASS} has been referenced but does not exist, replaced by a fixed one
 
@@ -1802,11 +1732,11 @@ pdfTeX warning (dest): name{glo:CSS} has been referenced but does not exist, rep
 
 pdfTeX warning (dest): name{glo:HTML} has been referenced but does not exist, replaced by a fixed one
 
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.pdf (45 pages, 1429723 bytes).
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /Users/vsmaxim/Documents/GitHub/Bachelorproef/bachproef/bachproef-tin.pdf (52 pages, 1461772 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 593 compressed objects within 6 object streams
- 282 named destinations out of 1000 (max. 500000)
- 64360 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 923 PDF objects out of 1000 (max. 8388607)
+ 775 compressed objects within 8 object streams
+ 309 named destinations out of 1000 (max. 500000)
+ 74616 words of extra memory for PDF output out of 89155 (max. 10000000)
 
