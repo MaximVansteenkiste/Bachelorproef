@@ -2812,20 +2812,21 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">../voorstel/voorstel.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="5">webpack-no-dateB</bcf:citekey>
-    <bcf:citekey order="6">mozilla-2021A</bcf:citekey>
-    <bcf:citekey order="7">webpack-no-dateA</bcf:citekey>
-    <bcf:citekey order="8">mozilla-2021B</bcf:citekey>
-    <bcf:citekey order="9">crutchfield-2018</bcf:citekey>
-    <bcf:citekey order="10">stateofjs-2020</bcf:citekey>
-    <bcf:citekey order="11">webapck-no-date</bcf:citekey>
-    <bcf:citekey order="12">snowpack-no-date</bcf:citekey>
-    <bcf:citekey order="13">vite-no-date</bcf:citekey>
-    <bcf:citekey order="14">facebook-2018</bcf:citekey>
-    <bcf:citekey order="15">facebook-2021</bcf:citekey>
-    <bcf:citekey order="16">houghton-2019</bcf:citekey>
-    <bcf:citekey order="17">hadwen-2021</bcf:citekey>
-    <bcf:citekey order="18">vansteenkiste-2021</bcf:citekey>
+    <bcf:citekey order="1">NPM</bcf:citekey>
+    <bcf:citekey order="2">webpack-no-dateB</bcf:citekey>
+    <bcf:citekey order="3">mozilla-2021A</bcf:citekey>
+    <bcf:citekey order="4">webpack-no-dateA</bcf:citekey>
+    <bcf:citekey order="5">mozilla-2021B</bcf:citekey>
+    <bcf:citekey order="6">crutchfield-2018</bcf:citekey>
+    <bcf:citekey order="7">stateofjs-2020</bcf:citekey>
+    <bcf:citekey order="8">snowpack-no-date</bcf:citekey>
+    <bcf:citekey order="11">webpack-no-date</bcf:citekey>
+    <bcf:citekey order="12">vite-no-date</bcf:citekey>
+    <bcf:citekey order="13">facebook-2018</bcf:citekey>
+    <bcf:citekey order="14">facebook-2021</bcf:citekey>
+    <bcf:citekey order="15">houghton-2019</bcf:citekey>
+    <bcf:citekey order="16">hadwen-2021</bcf:citekey>
+    <bcf:citekey order="17">vansteenkiste-2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
