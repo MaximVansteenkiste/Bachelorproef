@@ -1,41 +1,179 @@
-\chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}
-\label{ch:inleiding}
+%===============================================================================
+% LaTeX sjabloon voor de bachelorproef toegepaste informatica aan HOGENT
+% Meer info op https://github.com/HoGentTIN/bachproef-latex-sjabloon
+%===============================================================================
 
-De wijze waarop een webapplicatie gemaakt wordt, verandert continu. Het lijkt wel of er elke week een nieuw framework uitkomt met een iets andere aanpak dan al degene die hem voorgingen. Eén ding echter blijft al enkele jaren hetzelfde: de nood aan een build tool is er nog steeds, voor nu toch.
+\documentclass{bachproef-tin}
 
-Dit onderzoek tracht de noodzaak, werking en toekomst van de Javascript build tool te schetsen. Dit aan de hand van een paar veel voorkomende implementaties ervan. Het uiteindelijke doel is om te bepalen of de huidige koning, Webpack, nog steeds het recht heeft om die titel op te eisen.
+\usepackage{hogent-thesis-titlepage} % Titelpagina conform aan HOGENT huisstijl
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[nonumberlist]{glossaries}
 
-\section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}
-\label{sec:probleemstelling}
+\input{glossary}
 
-Dit onderzoek is in de eerste plaats gericht naar mijn co-promotor. Als webdeveloper komt hij vaak voor de keuze welke build tool te gebruiken. In de toekomst kan hij die beslissing dus maken aan de hand van deze vergelijkende studie. Daarnaast kan dit onderzoek ook een meerwaarde bieden voor andere webdevelopers, inclusief mezelf.
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
 
-\section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}
-\label{sec:onderzoeksvraag}
+\lstdefinestyle{codeStyle}{  
+  basicstyle=\footnotesize,
+  numbers=left,
+  stepnumber=1,
+  showstringspaces=false,
+  tabsize=1,
+  breaklines=true,
+  breakatwhitespace=false,
+  frame=true,
+    backgroundcolor=\color{gray!10!white},
+}
 
-De hoofdonderzoeksvraag is ook de titel van deze proef. Daarnaast zijn er nog een paar bijkomende vragen die deze proef zal beantwoorden: Zijn module bundlers voorbijgestreefd? En zo niet: is Webpack op zich voorbijgestreefd? Ongebundelde build tools zijn de nieuwe manier om webapplicaties te maken, zijn zij dus de facto de nieuwe standaard voor webapplicaties te bouwen en beter dan module bundlers?
+\lstset{style=codeStyle}
 
-\section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}
-\label{sec:onderzoeksdoelstelling}
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, in, instanceof, new, null, return, switch, this, throw, true, try, typeof, var, void, while, with},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  sensitive=true
+}
 
-Hoewel de onderzoeksvraag beantwoorden aan de hand van een vergelijkende studie uiteraard het uiteindelijke doel is, hoop ik dat dit werk volgend doel ook verwezenlijkt.
 
-De Javascript build tool is voor velen, mijn co-promotor en mezelf erbij gerekend, iets wat ze gebruiken en nodig hebben maar niet zoveel over nadenken en weten. Vele frameworks om webapplicaties te maken komen met een build tool ingebouwd. Zo wordt de keuze dus voor je gemaakt. Ideaal voor iemand die zich daar geen zorgen over wil maken maar aangezien de webapplicatie niet werkt zonder, is het de moeite om toch meer te weten erover. Het tweede, meer verborgen doel is dus om de build tool en zijn werking te ontrafelen.
 
-\section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}
-\label{sec:opzet-bachelorproef}
+%%---------- Documenteigenschappen ---------------------------------------------
+% TODO: Vul dit aan met je eigen info:
 
-% Het is gebruikelijk aan het einde van de inleiding een overzicht te
-% geven van de opbouw van de rest van de tekst. Deze sectie bevat al een aanzet
-% die je kan aanvullen/aanpassen in functie van je eigen tekst.
+% De titel van het rapport/bachelorproef
+\title{Mag Webpack zich nog steeds de koning der Javascript build tools noemen?}
 
-De rest van deze bachelorproef is als volgt opgebouwd:
+% Je eigen naam
+\author{Maxim Vansteenkiste}
 
-In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het onderzoeksdomein, op basis van een literatuurstudie.
+% De naam van je promotor (lector van de opleiding)
+\promotor{Heidi Roobrouck}
 
-In Hoofdstukken 3 en 4 wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
+% De naam van je co-promotor. Als je promotor ook je opdrachtgever is en je
+% dus ook inhoudelijk begeleidt (en enkel dan!), mag je dit leeg laten.
+\copromotor{Cedric Vanhaeverbeke}
 
-% TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
+% Indien je bachelorproef in opdracht van/in samenwerking met een bedrijf of
+% externe organisatie geschreven is, geef je hier de naam. Zoniet laat je dit
+% zoals het is.
+\instelling{---}
 
-In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.
+% Academiejaar
+\academiejaar{2021-2022}
 
+% Examenperiode
+%  - 1e semester = 1e examenperiode => 1
+%  - 2e semester = 2e examenperiode => 2
+%  - tweede zit  = 3e examenperiode => 3
+\examenperiode{1}
+
+%===============================================================================
+% Inhoud document
+%===============================================================================
+
+\begin{document}
+
+%---------- Taalselectie -------------------------------------------------------
+% Als je je bachelorproef in het Engels schrijft, haal dan onderstaande regel
+% uit commentaar. Let op: de tekst op de voorkaft blijft in het Nederlands, en
+% dat is ook de bedoeling!
+
+% \selectlanguage{english}
+
+%---------- Titelblad ----------------------------------------------------------
+\inserttitlepage
+
+%---------- Samenvatting, voorwoord --------------------------------------------
+\usechapterimagefalse
+\input{voorwoord}
+\input{samenvatting}
+
+%---------- Inhoudstafel -------------------------------------------------------
+\pagestyle{empty} % Geen hoofding
+\tableofcontents  % Voeg de inhoudstafel toe
+\cleardoublepage  % Zorg dat volgende hoofstuk op een oneven pagina begint
+\pagestyle{fancy} % Zet hoofding opnieuw aan
+
+%---------- Lijst figuren, afkortingen, ... ------------------------------------
+
+% Indien gewenst kan je hier een lijst van figuren/tabellen opgeven. Geef in
+% dat geval je figuren/tabellen altijd een korte beschrijving:
+%
+%  \caption[korte beschrijving]{uitgebreide beschrijving}
+%
+% De korte beschrijving wordt gebruikt voor deze lijst, de uitgebreide staat bij
+% de figuur of tabel zelf.
+
+\listoffigures
+\listoftables
+
+% Als je een lijst van afkortingen of termen wil toevoegen, dan hoort die
+% hier thuis. Gebruik bijvoorbeeld de ``glossaries'' package.
+% https://www.overleaf.com/learn/latex/Glossaries
+
+\pagestyle{empty}
+\printglossary
+\pagestyle{fancy}
+
+%---------- Kern ---------------------------------------------------------------
+
+% De eerste hoofdstukken van een bachelorproef zijn meestal een inleiding op
+% het onderwerp, literatuurstudie en verantwoording methodologie.
+% Aarzel niet om een meer beschrijvende titel aan deze hoofstukken te geven of
+% om bijvoorbeeld de inleiding en/of stand van zaken over meerdere hoofdstukken
+% te verspreiden!
+
+\input{inleiding}
+\input{standvanzaken}
+\input{nieuwproject}
+\input{bestaandproject}
+
+% Voeg hier je eigen hoofdstukken toe die de ``corpus'' van je bachelorproef
+% vormen. De structuur en titels hangen af van je eigen onderzoek. Je kan bv.
+% elke fase in je onderzoek in een apart hoofdstuk bespreken.
+
+%\input{...}
+%\input{...}
+%...
+
+\input{conclusie}
+
+%%=============================================================================
+%% Bijlagen
+%%=============================================================================
+
+\appendix
+\renewcommand{\chaptername}{Appendix}
+
+\chapter{Ruwe resultaten bestaand project}
+\input{ruweresultatenbestaand}
+%%---------- Onderzoeksvoorstel -----------------------------------------------
+
+\chapter{Onderzoeksvoorstel}
+
+Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat vooraf werd beoordeeld door de promotor. Dat voorstel is opgenomen in deze bijlage.
+
+% Verwijzing naar het bestand met de inhoud van het onderzoeksvoorstel
+\input{../voorstel/voorstel-inhoud}
+
+%%---------- Andere bijlagen --------------------------------------------------
+% TODO: Voeg hier eventuele andere bijlagen toe
+%\input{...}
+
+%%---------- Referentielijst --------------------------------------------------
+
+\printbibliography[heading=bibintoc]
+
+\end{document}

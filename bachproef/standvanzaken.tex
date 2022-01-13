@@ -1,7 +1,7 @@
 \chapter{Stand van zaken}
 \label{ch:stand-van-zaken}
 
-Een moderne website wordt gemaakt met drie belangrijke technologieën: \gls{HTML} voor inhoud, \gls{CSS} voor vormgeving, en \gls{Javascript} om de pagina interactief te maken. Deze drie kunnen allemaal aan elkaar worden gekoppeld, ergens op een server worden gezet en dan kan een gebruiker een werkende website laden. Ook al zijn de grote web platformen van vandaag, zoals Facebook en Youtube, allemaal gebaseerd op deze technologieën, zijn er veel meer ingrediënten nodig om ze te laten werken.
+Een moderne website wordt gemaakt met drie belangrijke technologieën: \gls{HTML} voor inhoud, \gls{CSS} voor vormgeving, en \gls{Javascript} om de pagina interactief te maken. Deze drie kunnen allemaal aan elkaar worden gekoppeld, ergens op een server worden gezet om vervolgens een werkende website te kunnen inladen. Ook al zijn de grote web platformen van vandaag, zoals Facebook en Youtube, allemaal gebaseerd op deze technologieën, zijn er veel meer ingrediënten nodig om ze te laten werken.
 
 Voor het maken van een simpele, statische site zijn de drie basis technologieën
  van het web alles wat we nodig hebben. Het is echter een heel ander verhaal voor een ontwikkelaar die een complexere site wil maken, een reactieve site, een site die gebruik maakt van \gls{open-source} \gls{packages} of die gewoon zijn eigen werk wat makkelijker wil maken. Er zijn duizenden bibliotheken, \gls{packages} en frameworks die webontwikkeling mogelijk maken op een heel ander niveau en eenvoudiger dan ooit tevoren \autocite{npm-no-date}. Dit stelt ons echter voor een nieuw probleem. 
@@ -23,7 +23,7 @@ Node.js, een runtime voor computers en servers waardoor \gls{Javascript} applica
 
 \subsection{Immediately invoked function expressions}
 
-Een Immediately invoked function expression of IIFE is een functie die wordt uitgevoerd zodra hij is gedefinieerd \autocite{mozilla-2021B}. Omdat elke IIFE een lokaal domein declareert, lossen ze het probleem van vervuiling van het globale domein op. Het gebruik van IFFE’s heeft geleid tot zogenaamde task runners: ze voegen al de project bestanden samen. Het grote nadeel van task runners is dat wanneer één bestand wordt gewijzigd, het hele project opnieuw moet worden opgebouwd. Ook moeten alle afhankelijkheden zoals \gls{packages} van tevoren handmatig gedefinieerd worden. Ze maken het makkelijker om functies en hele scripts te hergebruiken, maar doen niets voor de build output te verkleinen. Je kunt nog steeds eindigen met een zeer groot \gls{Javascript} bestand dat de gebruiker moet downloaden. 
+Een Immediately invoked function expression of IIFE is een functie die wordt uitgevoerd zodra hij is gedefinieerd \autocite{mozilla-2021B}. Omdat elke IIFE een lokaal domein declareert, lossen ze het probleem van vervuiling van het globale domein op. De garbage collector van Javascript zorgt hiervoor \autocite{mozilla-2021C}. Het gebruik van IFFE’s heeft geleid tot zogenaamde task runners: ze voegen al de project bestanden samen. Het grote nadeel van task runners is dat wanneer één bestand wordt gewijzigd, het hele project opnieuw moet worden opgebouwd. Ook moeten alle afhankelijkheden zoals \gls{packages} van tevoren handmatig gedefinieerd worden. Ze maken het makkelijker om functies en hele scripts te hergebruiken, maar doen niets voor de build output te verkleinen. Je kunt nog steeds eindigen met een zeer groot \gls{Javascript} bestand dat de gebruiker moet downloaden. 
 
 \lstinputlisting[language=Javascript]{codeSnippets/IIFE.js}
 
@@ -41,7 +41,7 @@ Dit alles kwam met een groot addertje onder het gras: Het werkte, en werkt nog s
 
 \subsection{ECMAScript Modules}
 
-CommonJS was geen officiële functie van Javascript. ECMAscript (=Javascript) heeft in versie 6 wel een eigen modulesysteem ingevoerd. ECMAScript Modules of ESM, bereiken dezelfde doelen als CommonJS, maar met een andere syntax. Moderne browsers kunnen nu applicaties draaien die opgebouwd zijn met ES Modules \autocite{mozilla-2021}. Met de nadruk op moderne browsers. 
+CommonJS was geen officiële functie van Javascript. ECMAscript (=Javascript) heeft in versie 6 wel een eigen modulesysteem ingevoerd \autocite{orendorff-2015}. ECMAScript Modules of ESM, bereiken dezelfde doelen als CommonJS, maar met een andere syntax. Moderne browsers kunnen nu applicaties draaien die opgebouwd zijn met ES Modules \autocite{mozilla-2021}. Met de nadruk op moderne browsers.
 
 \lstinputlisting[language=Javascript]{codeSnippets/esmExport.js}
 
@@ -51,22 +51,22 @@ CommonJS was geen officiële functie van Javascript. ECMAscript (=Javascript) he
 
 Ontwikkelaars zijn altijd op zoek naar manieren om hun leven gemakkelijker te maken. Ze willen om het even welk type van module, CommonJS of ESM, of om het even welk ander bestand (een afbeelding bijvoorbeeld) in hun project importeren en het in een kleiner uitvoerbestand naar de eindgebruiker verzenden. En zo werd de module bundler geboren.
 
-De meest essentiële functie van een module bundler is het bijhouden van alle modules die geïmporteerd worden in een project, los van uit hoeveel bestanden het bestaat, en deze te bundelen in een enkel bestand genaamd de bundel. Die bundel wordt ook geminificeerd om zo klein mogelijk te zijn, zonder de functionaliteit aan te tasten. Ze doen dit door commentaar, witruimtes, nieuwe regels, ... te verwijderen. Al dit resulteert in een kleiner bestand.
+De meest essentiële functie van een module bundler is het bijhouden van alle modules die geïmporteerd worden in een project, los van uit hoeveel bestanden het bestaat, en deze te bundelen in een enkel bestand genaamd de bundel. Die bundel wordt ook geminificeerd om zo klein mogelijk te zijn, zonder de functionaliteit aan te tasten. Ze doen dit door commentaar, witruimtes, nieuwe regels, ... te verwijderen. Ook worden variabele namen zo kort mogelijk afgekort. Al dit resulteert in een kleiner bestand.
 
 Ongebundeld bestand: 147 bytes
 \lstinputlisting[language=Javascript]{codeSnippets/unbundled.js}
-Gebundeld bestand: 97 bytes
+Gebundeld bestand: 77 bytes
 \lstinputlisting[language=Javascript]{codeSnippets/bundled.js}
 
 Alle module bundlers van vandaag delen deze functies samen met gemeenschappelijke concepten. We zullen kijken naar de 2 belangrijkste. 
 
 \subsubsection{Tree shaking}
 
-Tree shaking is het proces van het verwijderen van ‘dead code’. Wanneer een module wordt geïmporteerd, is misschien slechts een deel van die module nodig. Misschien wordt slechts één functie van de module gebruikt in het project. Met tree shaking, wordt de rest van de module die niet gebruikt wordt, verwijderd. NPM \gls{packages} kunnen vaak vele megabytes groot zijn. Tree shaking voorkomt dat al die bytes door de eindgebruiker moet gedownload worden, tenzij elke lijn code uit die \gls{packages} wordt gebruikt. 
+Tree shaking is het proces van het verwijderen van ‘dead code’ \autocite{webpack-no-dateC}. Wanneer een module wordt geïmporteerd, is misschien slechts een deel van die module nodig. Misschien wordt slechts één functie van de module gebruikt in het project. Met tree shaking wordt de rest van de module die niet gebruikt wordt, verwijderd. NPM \gls{packages} kunnen vaak vele megabytes groot zijn. Tree shaking voorkomt dat al die bytes door de eindgebruiker moet gedownload worden, tenzij elke lijn code uit die \gls{packages} wordt gebruikt. 
 
 \subsubsection{Code splitting}
 
-Ook al zorgt Tree shaking en het verwijderen van nieuwe lijnen, commentaar, … voor aanzienlijk kleinere bundels, toch kan dit bestand te groot worden bij sommige zwaardere applicaties. Code splitting kan worden gebruikt om de uitvoer bundel die wordt aangemaakt op te delen in kleinere bestanden. De gedeeltelijke bundels worden dan parallel geladen of wanneer nodig. Bijvoorbeeld: neem een website met meerdere pagina's. Als de code niet wordt gesplitst, zal alle code van alle pagina's in een enkel bestand staan en door de gebruiker worden gedownload wanneer de site wordt opgevraagd. In veel gevallen, zoals bij een klein project, is dit prima. Dat is waarom het optioneel is. Voor grotere toepassingen echter, is het slimmer om voor elke pagina een aparte bundel aan te maken. Die bundel bevat dan enkel de code nodig voor de pagina in questie, niet van heel de applicatie. Bij het laden van elke pagina, wordt de aparte bundel gedownload.
+Ook al zorgt Tree shaking en het verwijderen van nieuwe lijnen, commentaar, … voor aanzienlijk kleinere bundels, toch kan dit bestand te groot worden bij sommige zwaardere applicaties. Code splitting kan worden gebruikt om de uitvoer bundel die wordt aangemaakt op te delen in kleinere bestanden \autocite{mozilla-2021D}. De gedeeltelijke bundels worden dan parallel geladen of wanneer nodig. Bijvoorbeeld: neem een website met meerdere pagina's. Als de code niet wordt gesplitst, zal alle code van alle pagina's in een enkel bestand staan en door de gebruiker worden gedownload wanneer de site wordt opgevraagd. In veel gevallen, zoals bij een klein project, is dit prima. Dat is waarom het optioneel is. Voor grotere toepassingen echter, is het slimmer om voor elke pagina een aparte bundel aan te maken. Die bundel bevat dan enkel de code nodig voor de pagina in questie, niet van heel de applicatie. Bij het laden van elke pagina, wordt de aparte bundel gedownload.
 
 \subsection{Ongebundelde build tools}
 De meest recente ontwikkeling in het bouwen van een webapplicatie is de ongebundelde build tool. Ze vervullen dezelfde rol als de module bundler maar dan met een andere werkwijze. Omdat de meeste recente browsers nu ESModules ondersteunen, is het bundelen van alle \gls{Javascript} modules van een project vaak niet nodig. Als een module bundler zijn ontwikkel server opstart, moeten alle bestanden van het project worden gebouwd en vervolgens gebundeld. Als een bestand wordt gewijzigd, zal dat hele proces weer doorlopen worden. Bij ongebundelde build tools wordt een bestand alleen gebouwd als het wordt opgevraagd, wat een zeer snelle opstarttijd van de server betekent. Wanneer een bestand is gebouwd, wordt het voor onbepaalde tijd gecached. De browser zal een bestand nooit twee keer hoeven te downloaden totdat het verandert. Wanneer dat toch gebeurt, hoeft alleen dat ene bestand opnieuw te worden opgebouwd. 
@@ -76,7 +76,7 @@ De meest recente ontwikkeling in het bouwen van een webapplicatie is de ongebund
    \caption{Gebundeld vs ongebundeld \autocite{snowpack-no-date}}
 \end{figure}
 
-Dit alles resulteert in zeer snelle prestaties in vergelijking met module bundlers zoals Webpack. Wat echter niet betekent dat module bundlers voorbijgestreefd zijn. Sterker nog: ongebundelde build tools gebruiken ook module bundlers, de ene al meer dan de ander. Dit omdat de voordelen van Tree-shaking, een enkel uitvoerbestand en andere pluspunten van module bundlers nog steeds gelden. In hoofdstuk 3 en 4 zal hier dieper op ingegaan worden.
+Dit alles zou moeten resulteren in zeer snelle prestaties in vergelijking met module bundlers zoals Webpack. Wat echter niet betekent dat module bundlers voorbijgestreefd zijn. Sterker nog: ongebundelde build tools gebruiken ook module bundlers, de ene al meer dan de ander. Dit omdat de voordelen van Tree-shaking, een enkel uitvoerbestand en andere pluspunten van module bundlers nog steeds gelden. In hoofdstuk 3 en 4 zal hier dieper op ingegaan worden.
 
 Voor de rest van deze proef zal de verzamelnaam “build tools” gebruikt worden om naar module bundlers en ongebundelde build tools te verwijzen. Module bundlers zijn namelijk ook tools die een webapplicatie helpen bouwen of builden, maar dan gebundeld. Waar mogelijk zal natuurlijk de meest specifieke term gebruikt worden.
 
@@ -87,14 +87,14 @@ In deze paragraaf zullen voorbeelden van build tools worden besproken. De keuze 
 \begin{itemize}
    \item Functionele requirements
    \begin{itemize}
-     \item Een \gls{Javascript} webapplicatie kunnen bouwen
+     \item Een \gls{Javascript} client side webapplicatie kunnen bouwen
    \end{itemize}
    \item Niet-functionele requirements
    \begin{itemize}
      \item Typescript ondersteunen
      \item \gls{SASS} ondersteunen
      \item Statische bestanden ondersteunen
-     \item …
+     \item Andere soorten bestanden kunnen importeren
    \end{itemize}
 \end{itemize}
 
@@ -106,12 +106,13 @@ Hieruit volgt de long list voor module bundlers:
 \item Fusebox
 \item Browserify
 \item Gulp
+\item ESBuild
 \item …
 \end{itemize}
 
-Module bundlers werken fundamenteel op dezelfde manier. Ze allemaal vergelijken is dus overbodig. We kiezen voor Webpack en Parcel, dit is dus de short list. Zij verschillen het meest van elkaar zoals verder in dit hoofdstuk nog besproken zal worden en zijn daarenboven twee van de meest populaire opties \autocite{stateofjs-2020}. Rollup is ook een goede kandidaat maar komt al aan bod bij een ongebundelde build tool.
+Module bundlers werken fundamenteel op dezelfde manier. Ze allemaal vergelijken is dus overbodig. Aangezien Webpack en Parcel het meest van elkaar verschillen zoals verder in dit hoofdstuk zal besproken worden en daarenboven twee van de meest populaire opties zijn \autocite{stateofjs-2020}, zullen zij de shortlist uitmaken. Rollup is ook een goede kandidaat maar komt al aan bod bij een ongebundelde build tool.
 
-De zoektocht naar ongebundelde build tools voor deze proef was een pak gemakkelijker. Er bestaan namelijk maar twee met een deftige user-base. Volgende opsomming fungeert dus zowel als long- en short list.
+Ongebundelde build tools zijn relatief nieuw. Er zijn dus veel minder opties om uit te kiezen. Volgende opsomming fungeert dus zowel als long- en short list.
 
 \begin{itemize}
 \item Snowpack
@@ -122,7 +123,7 @@ De zoektocht naar ongebundelde build tools voor deze proef was een pak gemakkeli
 
 Webpack is de meest populaire module bundler in de wereld \autocite{stateofjs-2020}. Dit heeft veel te maken met het feit dat het één van de oudste is. Het is voorgeïnstalleerd in veel \gls{web frameworks} zoals create-react-app \autocite{facebook-2021} en Next.js \autocite{vercel-no-date}. Op deze manier wordt het door velen gebruikt zonder dat ze het weten. Webpack bevat een optionele ingebouwde ontwikkelserver die het opzetten van een lokale ontwikkelomgeving eenvoudiger maakt.
 
-Webpack draait op Node.js. Het kan zijn werk doen zonder enige configuratie, maar is zeer configureerbaar indien nodig. Het ondersteunt de hierboven besproken module types en meer. Omdat Webpack standaard alleen \gls{Javascript} en JSON bestanden begrijpt, worden Loaders gebruikt om de verwerking van andere bestandstypen mogelijk te maken door ze om te zetten in geldige modules. Met behulp van Loaders kunnen andere typen modules of zelfs assets zoals afbeeldingen worden geïmporteerd en verwerkt door Webpack. Bovendien kan Webpack ook worden uitgebreid met plugins. Deze maken een brede waaier aan extra functionaliteit mogelijk, zoals verdere bundel optimalisatie. 
+Webpack draait op Node.js. Het kan zijn werk doen zonder enige configuratie, maar is zeer configureerbaar indien nodig. Het ondersteunt de hierboven besproken module types en meer. Omdat Webpack standaard alleen \gls{Javascript} en \gls{JSON} bestanden begrijpt, worden Loaders gebruikt om de verwerking van andere bestandstypen mogelijk te maken door ze om te zetten in geldige modules. Met behulp van Loaders kunnen andere typen modules of zelfs assets zoals afbeeldingen worden geïmporteerd en verwerkt door Webpack. Bovendien kan Webpack ook worden uitgebreid met plugins. Deze maken een brede waaier aan extra functionaliteit mogelijk, zoals verdere bundel optimalisatie. 
 
 De functie van een module bundler is al besproken. Maar hoe bereikt Webpack dit? Wanneer een bestand afhankelijk is van een ander in een project, ziet Webpack dat en zet het in zijn dependency graph.
 
@@ -131,11 +132,11 @@ De functie van een module bundler is al besproken. Maar hoe bereikt Webpack dit?
    \caption{Essentiële functie module bundler \autocite{webpack-no-date}}
 \end{figure}
 
-Deze graaf wordt recursief opgebouwd. Wanneer het tijd is om de applicatie te bouwen, gebruikt het de dependency graph om alle bestanden samen te voegen tot één uitvoerbestand dat dan naar de browser wordt verzonden. Module bundlers en dus Webpack ook doen dit zowel in ontwikkeling als in productie.
+Deze graaf wordt recursief opgebouwd. Wanneer het tijd is om de applicatie te bouwen, gebruikt het de dependency graph om alle bestanden samen te voegen tot één uitvoerbestand dat dan naar de browser wordt verzonden. Module bundlers, en dus ook Webpack, doen dit zowel in ontwikkeling als in productie. Met het belangrijk verschil dat bundelen in development iets anders is dan in productie. In development wordt bijvoorbeeld niet aan minificatie gedaan omdat het debuggen van een applicatie zo veel moeilijker zou zijn.
 
 \subsubsection{Parcel}
 
-Parcel is een andere module bundler. Het draait echter niet op Node.js, in plaats daarvan is de compiler die het gebruikt gebouwd met Rust. Rust is een gecompileerde programmeertaal. Zonder al te veel in detail te treden, betekent dit dat Rust code direct naar machinecode wordt gecompileerd, wat resulteert in snellere prestaties. Het doet veel van dezelfde dingen die Webpack doet zonder enige configuratie. Toen het werd uitgebracht, was het belangrijkste kenmerk dat het geen configuratiebestand nodig had en Webpack wel. Nu kan Webpack echter ook zijn werk doen zonder een configuratiebestand. Hoewel een no-configuratie aanpak geweldig is voor kleinere projecten, is het vaak niet haalbaar voor een grote applicatie. 
+Parcel is een andere module bundler. Het draait echter niet in een Node.js omgeving, in plaats daarvan gebruikt het een compiler die geschreven is in RUST. RUST is een gecompileerde programmeertaal. Zonder al te veel in detail te treden, betekent dit dat RUST code direct naar machinecode wordt gecompileerd, wat resulteert in snellere prestaties. De Javascript interpreter, en dus een hele stap, wordt hiermee overgeslagen. Parcel doet veel van dezelfde dingen die Webpack doet zonder enige configuratie. Toen het werd uitgebracht, was het belangrijkste kenmerk dat het geen configuratiebestand nodig had en Webpack wel. Nu kan Webpack echter ook zijn werk doen zonder een configuratiebestand. Hoewel een no-configuratie aanpak geweldig is voor kleinere projecten, is het vaak niet haalbaar voor een grote applicatie. 
 
 \subsubsection{Snowpack}
 
@@ -144,7 +145,7 @@ Snowpack is het eerste voorbeeld van een ongebundelde build tool. Het is momente
 Zoals hierboven vermeldt, gebruikt een build tool vaak toch een module bundler in productie. Bij Snowpack is dit echter optioneel. Standaard is de productie build die Snowpack aanmaakt dus ook ongebundeld, iets waar enkel moderne browsers mee overweg kunnen. De configuratie kan wel aangepast worden om gebruik te maken van Webpack of Rollup zodat dat laatste geen probleem meer vormt. Voor dit onderzoek voegen we zo’n module bundler niet toe aan Snowpack. Bij de volgende build tool die aan bod komt, Vite, is het geen optie om de module bundler in productie weg te laten. Snowpack zal dus de volledige ongebundelde applicatie representeren, terwijl Vite hetzelfde zal doen voor half-ongebundelde.
 
 \subsubsection{Vite}
-Vite is de jongste build tool die in deze studie aan bod komt. Het combineert een ongebundelde ontwikkelomgeving met een gebundelde in productie. Voor dit laatste gebruikt het Rollup \autocite{vite-no-date}, een alternatief aan Webpack. Hoewel het ook een configuratie bestand bevat, is die veel minder groot en ingewikkeld dan Snowpack. 
+Vite is de jongste build tool die in deze studie aan bod komt \autocite{vite-2020}. Het combineert een ongebundelde ontwikkelomgeving met een gebundelde in productie. Voor dit laatste gebruikt het Rollup \autocite{vite-no-date}, een alternatief aan Webpack. Hoewel het ook een configuratie bestand bevat, is die veel minder groot en ingewikkeld dan Snowpack. 
 
 Rollup is een module bundler die aan bod kwam in die categorie zijn long-list. Het focust vooral op het vertalen van ESModules naar andere soorten die wel ondersteund worden door het doelplatform. Hoewel Javascript nu eigen type module ondersteunt (ESM), is ze is alleen geïmplementeerd in moderne browsers en nog niet afgerond in Node.js. Rollup zorgt ervoor dat code geschreven kan worden met behulp van het nieuwe module-systeem, en zal dat dan vertalen naar de bestaande ondersteunde formaten, zoals CommonJS modules, IIFE’s, … . Rollup is niet optioneel bij Vite. Ze werken nauw samen om het beste van beide werelden te combineren. Wat dit alles betekent voor de eindgebruiker, volgt later.
 
