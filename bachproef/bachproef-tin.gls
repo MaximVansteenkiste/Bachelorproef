@@ -1,0 +1,30 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossentry{CSS}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossentry{HTML}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{17\delimR 19}}}\glsgroupskip
+\glsgroupheading{J}\relax \glsresetentrylist %
+\glossentry{Javascript}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{17\delimR 19}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{21\delimR 23}}}\glsgroupskip
+\glsgroupheading{O}\relax \glsresetentrylist %
+\glossentry{open-source}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{package-manager}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{17}}}%
+\glossentry{packages}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{19}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{21}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{SASS}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{22}}}\glsgroupskip
+\glsgroupheading{W}\relax \glsresetentrylist %
+\glossentry{web frameworks}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{23}}}%
+\end{theglossary}\glossarypostamble

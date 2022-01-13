@@ -1,26 +1,26 @@
 \chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}
 \label{ch:inleiding}
 
-De wijze waarop een webapplicatie gemaakt wordt, verandert continu. Het lijkt wel of er elke week een nieuw framework uitkomt met een iets andere aanpak dan al degene die hem voorgingen. Eén ding echter blijft al enkele jaren hetzelfde: de nood aan een module bundler is er nog steeds, voor nu toch.
+De wijze waarop een webapplicatie gemaakt wordt, verandert continu. Het lijkt wel of er elke week een nieuw framework uitkomt met een iets andere aanpak dan al degene die hem voorgingen. Eén ding echter blijft al enkele jaren hetzelfde: de nood aan een build tool is er nog steeds, voor nu toch.
 
-Dit onderzoek tracht de noodzaak, werking en toekomst van de module bundler te schetsen. Dit aan de hand van een paar veel voorkomende implementaties ervan. Het uiteindelijke doel is om te bepalen of de huidige koning van de module bundlers, Webpack, nog steeds het recht heeft om die positie op te eisen.
+Dit onderzoek tracht de noodzaak, werking en toekomst van de Javascript build tool te schetsen. Dit aan de hand van een paar veel voorkomende implementaties ervan. Het uiteindelijke doel is om te bepalen of de huidige koning, Webpack, nog steeds het recht heeft om die titel op te eisen.
 
 \section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}
 \label{sec:probleemstelling}
 
-Dit onderzoek is in de eerste plaats gericht naar mijn co-promotor. Als webdeveloper komt hij vaak voor de keuze van welke module bundler te gebruiken. In de toekomst kan hij die beslissing dus maken aan de hand van deze vergelijkende studie. Daarnaast kan dit onderzoek ook een meerwaarde bieden voor andere webdevelopers, inclusief mezelf.
+Dit onderzoek is in de eerste plaats gericht naar mijn co-promotor. Als webdeveloper komt hij vaak voor de keuze welke build tool te gebruiken. In de toekomst kan hij die beslissing dus maken aan de hand van deze vergelijkende studie. Daarnaast kan dit onderzoek ook een meerwaarde bieden voor andere webdevelopers, inclusief mezelf.
 
 \section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}
 \label{sec:onderzoeksvraag}
 
-De hoofdonderzoeksvraag werd al eerder aangehaald: is het nog steeds gewettigd dan Webpack de meest gebruikte module bundler is?
+De hoofdonderzoeksvraag is ook de titel van deze proef. Daarnaast zijn er nog een paar bijkomende vragen die deze proef zal beantwoorden: Zijn module bundlers voorbijgestreefd? En zo niet: is Webpack op zich voorbijgestreefd? Ongebundelde build tools zijn de nieuwe manier om webapplicaties te maken, zijn zij dus de facto de nieuwe standaard voor webapplicaties te bouwen en beter dan module bundlers?
 
 \section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}
 \label{sec:onderzoeksdoelstelling}
 
 Hoewel de onderzoeksvraag beantwoorden aan de hand van een vergelijkende studie uiteraard het uiteindelijke doel is, hoop ik dat dit werk volgend doel ook verwezenlijkt.
 
-De module bundler is voor velen, mijn co-promotor en mezelf erbij gerekend, iets wat ze gebruiken en nodig hebben maar niet zoveel over nadenken en weten. Vele frameworks om webapplicaties te maken komen met een module bundler ingebouwd. Zo wordt de keuze dus voor je gemaakt. Ideaal voor iemand die zich daar geen zorgen over wil maken maar aangezien de webapplicatie niet werkt zonder, is het de moeite om toch meer te weten erover. Het tweede, meer verborgen doel is dus om de module bundler en zijn werking te ontrafelen.
+De Javascript build tool is voor velen, mijn co-promotor en mezelf erbij gerekend, iets wat ze gebruiken en nodig hebben maar niet zoveel over nadenken en weten. Vele frameworks om webapplicaties te maken komen met een build tool ingebouwd. Zo wordt de keuze dus voor je gemaakt. Ideaal voor iemand die zich daar geen zorgen over wil maken maar aangezien de webapplicatie niet werkt zonder, is het de moeite om toch meer te weten erover. Het tweede, meer verborgen doel is dus om de build tool en zijn werking te ontrafelen.
 
 \section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}
 \label{sec:opzet-bachelorproef}
@@ -33,7 +33,7 @@ De rest van deze bachelorproef is als volgt opgebouwd:
 
 In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het onderzoeksdomein, op basis van een literatuurstudie.
 
-In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
+In Hoofdstukken 3 en 4 wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
 
 % TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
 
