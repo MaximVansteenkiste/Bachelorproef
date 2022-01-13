@@ -101,7 +101,7 @@ Voor Snowpack gaan we net zoals bij Parcel te werk zonder framework. In tegenste
 
 Deze structuur is identiek aan die van CRA. In tegenstelling tot Parcel is een public map al geconfigureerd voor statische bestanden, zoals afbeeldingen. Een configuratiebestand voor Snowpack is ook aangemaakt. Hierin staan al 25 lijnen configuratie voor ons geschreven. Meer dan Parcel maar aanzienlijk minder dan CRA. Merk op dat sommige bestanden nu de extensie .jsx in plaats van .js hebben. Dit komt doordat Snowpack geen JSX tolereert in .js bestanden. JSX is wat een React component retourneert i.e elk React component moet een .jsx extensie hebben. Geen probleem bij een nieuw project maar bij een oud kan het nodig zijn om vele bestanden van extensie te veranderen, zie later.
 
-Zoals in de literatuurstudie vermeld, is Snowpack geen module bundler aangezien het de verschillende bestanden in een project niet bundelt. In productie kan dat optioneel nog gedaan worden door Webpack of Rollup maar dat is niet standaard. In ontwikkelings heeft dit het grote voordeel dat de bundel niet telkens opnieuw opgebouwd moet worden als een bestand veranderd.
+Zoals in de literatuurstudie vermeld, is Snowpack geen module bundler aangezien het de verschillende bestanden in een project niet bundelt. In productie kan dat optioneel nog gedaan worden door Webpack of Rollup maar dat is niet standaard. In ontwikkelings heeft dit het grote voordeel dat de bundel niet telkens opnieuw opgebouwd moet worden als een bestand verandert.
 
 \begin{table}[h]
    \centering
@@ -132,7 +132,7 @@ Vite is nog een voorbeeld van een ongebundelde build tool, net zoals Snowpack. E
        \caption[Aangemaakte bestanden door Vite commando]{Aangemaakte bestanden door commado}
    \end{figure}
 
-Er is een klein config bestand aanwezig van 7 lijnen code waar de react plugin is geïnitialiseerd. Voor de rest ziet het project in grote lijnen er uit als dat van Snowpack. Er is geen public map aanwezig maar dat kan aangemaakt worden en wordt automatisch geconfigureerd.
+Er is een klein configuratie bestand aanwezig van 7 lijnen code waar de react plugin is geïnitialiseerd. Voor de rest ziet het project in grote lijnen er uit als dat van Snowpack. Er is geen public map aanwezig maar dat kan aangemaakt worden en wordt automatisch geconfigureerd.
 
 \begin{table}[h]
    \centering
@@ -140,11 +140,11 @@ Er is een klein config bestand aanwezig van 7 lijnen code waar de react plugin i
    \textbf{Grootte project (MB)} & 0,013 \\
    \textbf{Grootte node\_modules (MB)} & 37 \\
    \textbf{Grootte uitvoer (MB)} & 0,14 \\
-   \textbf{Snelheid creatie uitvoer (s)} & 2 \\
+   \textbf{Snelheid creatie uitvoer (s)} & \\
    \textbf{} & 2 \\
    \textbf{} & 2 \\
    \textbf{} & 2 \\
-   \textbf{Snelheid opstarten ontwikkelings server (s)} & <1 \\
+   \textbf{Snelheid opstarten ontwikkelings server (s)} & \\
    \textbf{} & <1 \\
    \textbf{} & <1 \\
    \textbf{} & <1
@@ -156,7 +156,7 @@ Er is een klein config bestand aanwezig van 7 lijnen code waar de react plugin i
 \section{Conclusie}
 Al de build tools hebben geen moeite met het opzetten van een nieuw project, wat verwacht werd. Voor Webpack is er gebruik gemaakt van een framework, CRA, omdat het configuratie werk anders te veel zou zijn. Ook al is het een nieuw project en dus relatief klein, toch kunnen we al verschillen waarnemen tussen de vier kandidaten.
 
-Op onderstaande figuur zien we al een trend verschijnen die doorheen deze conclusie zal gelden: Webpack is aanzienlijk trager dan de competitie, ondanks dat Snowpack niet bundelt, is het toch even traag of trager dan Parcel. Die laatste zijn Rust compiler, zie literatuurstudie, zal zijn vruchten afwerpen. De drie minieme balkjes bij Vite en het ene bij Parcel zijn geen fout: zij waren gewoon sneller dan een volledige seconde.
+Op onderstaande figuur zien we al een trend verschijnen die doorheen deze conclusie zal gelden: Webpack is aanzienlijk trager dan de competitie en ondanks dat Snowpack niet bundelt, is het toch even traag of trager dan Parcel. Die laatste zijn Rust compiler, zie literatuurstudie, zal zijn vruchten afwerpen. De drie minieme balkjes bij Vite en het ene bij Parcel zijn geen fout: zij waren gewoon sneller dan een volledige seconde.
 
 \begin{figure}[h]
    \includegraphics[scale=0.5]{conclusieNieuw}
@@ -165,4 +165,4 @@ Op onderstaande figuur zien we al een trend verschijnen die doorheen deze conclu
    \end{figure}
 
 
-De developer experience was voor al de build tools zo goed als dezelfde bij het opzetten van dit nieuw project. De conclusie kunnen we daarop dus niet baseren. Maar de data hierboven is duidelijk genoeg: bij het opzetten van een project is Vite de beste optie. Het gebruikt het beste van beide werelden: ongebundelde code in ontwikkeling en gebundelde code in productie. De andere opties hebben niet direct een afknapper, maar de snelheid van Vite valt niet te negeren. Create-react-app is een framework en is dus nog steeds de beste optie voor iemand die zich geen zorgen wil maken over hoe zijn applicatie gebouwd wordt, met iets tragere snelheden ten gevolg. Voor iemand die de sprong nog niet durft te wagen naar de relatief nieuwe ongebundelde build tools, is Parcel de beste optie. Door zijn Rust-compiler en zero-configuration aanpak is het sneller en luchtiger in gebruik dan Webpack. Snowpack viel het meest tegen. Ook al is het een ongebundelde build tool, toch slaagden gewone module bundlers er in om sneller te zijn. 
+De developer experience was voor al de build tools zo goed als dezelfde bij het opzetten van dit nieuw project. De conclusie kunnen we daarop dus niet baseren. Maar de data hierboven is duidelijk genoeg: bij het opzetten van een project is Vite de beste optie. Het gebruikt het beste van beide werelden: ongebundelde code in ontwikkeling en gebundelde in productie. De andere opties hebben niet direct een afknapper, maar de snelheid van Vite valt niet te negeren. Create-react-app is een framework en is dus nog steeds de beste optie voor iemand die zich geen zorgen wil maken over hoe zijn applicatie gebouwd wordt, met iets tragere snelheden ten gevolg. Misschien beslissen de makers ervan ooit om Webpack in te ruilen voor iets sneller. Voor iemand die de sprong nog niet durft te wagen naar de relatief nieuwe ongebundelde build tools, is Parcel de beste optie. Door zijn Rust-compiler en zero-configuration aanpak is het sneller en luchtiger in gebruik dan Webpack. Snowpack viel het meest tegen. Ook al is het een ongebundelde build tool, toch slaagden gewone module bundlers er in om sneller te zijn. 

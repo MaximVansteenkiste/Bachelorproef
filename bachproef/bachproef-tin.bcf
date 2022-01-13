@@ -2830,19 +2830,23 @@
     <bcf:citekey order="20">mozilla-2021D</bcf:citekey>
     <bcf:citekey order="21">snowpack-no-date</bcf:citekey>
     <bcf:citekey order="22">stateofjs-2020</bcf:citekey>
-    <bcf:citekey order="23">stateofjs-2020</bcf:citekey>
-    <bcf:citekey order="24">facebook-2021</bcf:citekey>
-    <bcf:citekey order="25">vercel-no-date</bcf:citekey>
-    <bcf:citekey order="26">webpack-no-date</bcf:citekey>
-    <bcf:citekey order="27">stateofjs-2020</bcf:citekey>
-    <bcf:citekey order="28">vite-2020</bcf:citekey>
-    <bcf:citekey order="29">vite-no-date</bcf:citekey>
-    <bcf:citekey order="30">vansteenkiste-2021A</bcf:citekey>
-    <bcf:citekey order="31">facebook-2018</bcf:citekey>
-    <bcf:citekey order="32">facebook-2021</bcf:citekey>
-    <bcf:citekey order="33">houghton-2019</bcf:citekey>
-    <bcf:citekey order="34">hadwen-2021</bcf:citekey>
-    <bcf:citekey order="35">vansteenkiste-2021</bcf:citekey>
+    <bcf:citekey order="23">webpack-2014</bcf:citekey>
+    <bcf:citekey order="24">stateofjs-2020</bcf:citekey>
+    <bcf:citekey order="25">facebook-2021</bcf:citekey>
+    <bcf:citekey order="26">vercel-no-date</bcf:citekey>
+    <bcf:citekey order="27">webpack-no-date</bcf:citekey>
+    <bcf:citekey order="28">parcel-2020</bcf:citekey>
+    <bcf:citekey order="29">snowpack-2019</bcf:citekey>
+    <bcf:citekey order="30">stateofjs-2020</bcf:citekey>
+    <bcf:citekey order="31">vite-2020</bcf:citekey>
+    <bcf:citekey order="32">vite-2020B</bcf:citekey>
+    <bcf:citekey order="33">vite-no-date</bcf:citekey>
+    <bcf:citekey order="34">vansteenkiste-2021A</bcf:citekey>
+    <bcf:citekey order="35">facebook-2018</bcf:citekey>
+    <bcf:citekey order="36">facebook-2021</bcf:citekey>
+    <bcf:citekey order="37">houghton-2019</bcf:citekey>
+    <bcf:citekey order="38">hadwen-2021</bcf:citekey>
+    <bcf:citekey order="39">vansteenkiste-2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
