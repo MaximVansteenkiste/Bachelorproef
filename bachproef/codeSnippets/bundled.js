@@ -1,1 +1,1 @@
-const array=["Hello","my","name","is","Maxim"];for(const element of array){console.log(element);}
+const a=["Hello","my","name","is","Maxim"];for(const e of a){console.log(e);}

@@ -19,14 +19,14 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 
 \lstdefinestyle{codeStyle}{  
-    belowcaptionskip=1\baselineskip,
-    breaklines=true,
-    frame=none,
-    numbers=none, 
-    basicstyle=\footnotesize\ttfamily,
-    keywordstyle=\bfseries\color{green!40!black},
-    commentstyle=\itshape\color{purple!40!black},
-    identifierstyle=\color{blue},
+  basicstyle=\footnotesize,
+  numbers=left,
+  stepnumber=1,
+  showstringspaces=false,
+  tabsize=1,
+  breaklines=true,
+  breakatwhitespace=false,
+  frame=true,
     backgroundcolor=\color{gray!10!white},
 }
 
@@ -137,7 +137,8 @@
 
 \input{inleiding}
 \input{standvanzaken}
-\input{methodologie}
+\input{nieuwproject}
+\input{bestaandproject}
 
 % Voeg hier je eigen hoofdstukken toe die de ``corpus'' van je bachelorproef
 % vormen. De structuur en titels hangen af van je eigen onderzoek. Je kan bv.
@@ -156,6 +157,8 @@
 \appendix
 \renewcommand{\chaptername}{Appendix}
 
+\chapter{Ruwe resultaten bestaand project}
+\input{ruweresultatenbestaand}
 %%---------- Onderzoeksvoorstel -----------------------------------------------
 
 \chapter{Onderzoeksvoorstel}
@@ -163,7 +166,7 @@
 Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat vooraf werd beoordeeld door de promotor. Dat voorstel is opgenomen in deze bijlage.
 
 % Verwijzing naar het bestand met de inhoud van het onderzoeksvoorstel
-\input{../voorstel/voorstel-inhoud}
+\input{ruweresultatenbestaand}
 
 %%---------- Andere bijlagen --------------------------------------------------
 % TODO: Voeg hier eventuele andere bijlagen toe
